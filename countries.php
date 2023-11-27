@@ -45,7 +45,7 @@ include "view-header.php";
 </div>    
 <?php
    // $countries = selectCountries();
-include "view-stadiums.php";
+//include "view-stadiums.php";
 include "view-footer.php";
 ?>
 
