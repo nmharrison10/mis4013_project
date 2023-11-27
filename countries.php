@@ -1,5 +1,12 @@
 <html>
-  <head></head>
+  <head>
+    <?php
+require_once("util-db.php");
+require_once("countries.php");
+
+$pageTitle = "Countries";
+include "view-header.php";
+  </head>
   <body>
   <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -40,4 +47,8 @@
   </button>
 </div>     
   </body>
+    $countries = selectCountries();
+include "view-stadiums.php";
+include "view-footer.php";
+?>
 </html>
