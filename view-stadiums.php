@@ -11,7 +11,7 @@
     </head>
     <body>
 <?php
-while ($stadiums = $stadiums->fetch_assoc()) {
+while ($stadium = $stadiums->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $stadium['stadium_id']?></td>
