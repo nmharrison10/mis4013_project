@@ -1,4 +1,6 @@
-<div id="carouselExampleCaptions" class="carousel slide">
+<html>
+  <body>
+  <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Spain"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="England"></button>
@@ -33,3 +35,5 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+  </body>
+</html>
