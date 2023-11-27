@@ -23,7 +23,7 @@
           <a class="nav-link" href="stadiums.php">Stadiums</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"></a>
+          <a class="nav-link" href="countries.php">Countries</a>></a>
         </li>
          <li class="nav-item">
           <a class="nav-link"></a>
