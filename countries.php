@@ -1,6 +1,6 @@
     <?php
 require_once("util-db.php");
-require_once("countries.php");
+//require_once("countries.php");
 
 $pageTitle = "Countries";
 include "view-header.php";
@@ -42,7 +42,7 @@ include "view-header.php";
     <span class="visually-hidden">Next</span>
   </button>
 </div>     
-    $countries = selectCountries();
+   // $countries = selectCountries();
 include "view-stadiums.php";
 include "view-footer.php";
 ?>
