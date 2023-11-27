@@ -1,4 +1,5 @@
 <html>
+  <head></head>
   <body>
   <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
