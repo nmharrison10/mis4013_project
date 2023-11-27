@@ -43,7 +43,7 @@ include "view-header.php";
     <span class="visually-hidden">Next</span>
   </button>
 </div>    
-<?php>
+<?php
    // $countries = selectCountries();
 include "view-stadiums.php";
 include "view-footer.php";
