@@ -8,7 +8,7 @@
 <script>
   "use strict";
   {
-var map = L.map( "mapdiv", { attributionControl: false, } ).setView( [ 0, -97.07270547900498 ], 12 );
+var map = L.map( "mapdiv", { attributionControl: false, } ).setView( [ 35.21145940282846, -97.44345712066671], 12 );
 
 let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
@@ -38,9 +38,14 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
 </tr>
 <?php
-if($stadium['stadium_id']==1){
-echo $stadium['stadium_id'];
 }
+?>
+
+<?php
+while ($stadium = $stadiums->fetch_assoc()) {
+  if($stadium['stadium_id']==1){
+  echo $stadium['stadium_id'];
+  }
 }
 ?>
     </body>
