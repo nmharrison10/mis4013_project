@@ -40,14 +40,15 @@ while ($stadium = $stadiums->fetch_assoc()) {
 <?php
 }
 ?>
-
+<div>
 <?php
 while ($stadium = $stadiums->fetch_assoc()) {
   if($stadium['stadium_id']==1){
-  echo $stadium['stadium_id'];
+  ?><span><?php echo $stadium['stadium_id'];?></span><?php
   }
 }
 ?>
+</div>
     </body>
   </table>
 </div>
