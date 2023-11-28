@@ -76,11 +76,8 @@ while ($stadium = $stadiums->fetch_assoc()) {
 </div>
 
 <script>
-function css(element, style) {
-    for (const property in style)
-        element.style[property] = style[property];
-}
-  
-var container = document.getElementsByClassName("leaflet-contol-zoom");
-  css(container, {height:5px;width:5px;});
+
+document.getElementsByClassName("leaflet-contol-zoom").style.height=5px;
+document.getElementsByClassName("leaflet-contol-zoom").style.width=5px;
+
 </script>
