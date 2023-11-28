@@ -54,12 +54,13 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( map<?php echo $stadium['stadium_id']?> );;
 
-    if(marker!=null)
+    if(marker<?php echo $stadium['stadium_id']?>!=null)
     {
-        map.removeLayer(marker);
-        marker=null;
+        map.removeLayer(marker<?php echo $stadium['stadium_id']?>);
+        marker<?php echo $stadium['stadium_id']?>=null;
     }
-    marker<?php echo $stadium['stadium_id']?> = L.marker( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?> ] );
+    
+    let marker<?php echo $stadium['stadium_id']?> = L.marker( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?> ] );
     marker<?php echo $stadium['stadium_lat']?>.bindPopup(<?php echo $stadium['stadium_name']?>);
     marker<?php echo $stadium['stadium_id']?>.addTo(map<?php echo $stadium['stadium_id']?>);
     marker<?php echo $stadium['stadium_id']?>.openPopup();
