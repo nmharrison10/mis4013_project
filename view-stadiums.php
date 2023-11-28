@@ -42,12 +42,13 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
   <td>
 
-    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:50px;width:50px;"></div>
+    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:100px;width:100px;"></div>
 
 <script>
   "use strict";
   {
-var map = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView( [ 35.21145940282846, -97.44345712066671], 12 );
+var map = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView
+  ( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 12 );
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
