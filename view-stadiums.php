@@ -38,7 +38,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
 </tr>
 <?php
-if(<?php echo $stadium['stadium_id']?>==1){
+if("<?php echo $stadium['stadium_id']?>"==1){
 <?php echo $stadium['stadium_id']?>
 }
 }
