@@ -17,7 +17,6 @@
       <div class="modal-body" style="display:flex;flex-direction:row">
         <div>
           <form method="post" action="">
-            <div>
           <div class="mb-3">
             <label for="sName<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Name</label>
             <input type="text" class="form-control" id="sName<?php echo $stadium['stadium_id'];?>" name="sName" value="<?php echo $stadium['stadium_name'];?>">
