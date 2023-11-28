@@ -46,7 +46,8 @@ while ($stadium = $stadiums->fetch_assoc()) {
 <script>
   "use strict";
   {
-var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 10 );
+var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, zoomControl:false, 
+  } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 10 );
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
   {maxZoom: 10,
@@ -65,16 +66,3 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
   </table>
 </div>
 
-<style>
-  .leaflet-control-container{
-  box-shadow: none;
-}
-  .leaflet-control-zoom-in{
-    width: 10px;
-    height:10px;
-}
-  .leaflet-control-zoom-out{
-    width: 10px;
-    height:10px;
-}
-</style>
