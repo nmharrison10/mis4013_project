@@ -33,8 +33,8 @@
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
           </div>
-        <div style="height:200;width:200;background-color:pink">
-            
+        <div style="height:200;width:200;background-color:coral;">
+            Testing
         </div>
           </form>
         
