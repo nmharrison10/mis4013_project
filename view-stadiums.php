@@ -40,6 +40,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
 </tr>
 <?php
 }
+<?php echo $stadium['stadium_id']?>
 ?>
     </body>
   </table>
