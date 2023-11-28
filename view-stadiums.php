@@ -49,8 +49,8 @@ while ($stadium = $stadiums->fetch_assoc()) {
 var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, zoomControl:false, 
   } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 15 );
 
-L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
-  {maxZoom: 30,
+L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( map<?php echo $stadium['stadium_id']?> );
     
