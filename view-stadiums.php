@@ -1,16 +1,18 @@
 <h1>Stadiums</h1>
-
+<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>              
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
 <div id="mapdiv" style="height:400px;400px;"></div>
 
 <script>
   "use strict";
   {
-var map = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
+var map = L.map( "mapdiv", { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
 
-var tile = L.tileLayer( 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
-    attribution: ''
-} ).addTo( map );
+let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+});
+    tile.addTo(map);
   }
 </script>
 
