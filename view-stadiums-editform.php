@@ -14,8 +14,9 @@
         <h1 class="modal-title fs-5" id="editStadiumModalLabel<?php echo $stadium['stadium_id'];?>">Edit Stadium</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
-          <form method="post" action="" style="display:flex;flex-direction:row">
+      <div class="modal-body" style="display:flex;flex-direction:row">
+        <div>
+          <form method="post" action="">
             <div>
           <div class="mb-3">
             <label for="sName<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Name</label>
@@ -32,12 +33,12 @@
               <input type="hidden" name="sid" value="<?php echo $stadium['stadium_id'];?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
-          </div>
+          </form>
+        </div>
+          
         <div style="height:200;width:200;background-color:coral;">
             Testing
         </div>
-          </form>
-        
       </div>
     </div>
   </div>
