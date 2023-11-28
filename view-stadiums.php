@@ -25,6 +25,7 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
       <th>Name</th>
       <th>Longitude</th>
       <th>Latitude</th>
+      <th>Test</th>
       </tr>
     </head>
     <body>
@@ -39,6 +40,24 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_name']?></td>
   <td><?php echo $stadium['stadium_lat']?></td>
   <td><?php echo $stadium['stadium_long']?></td>
+  <td>
+
+    <div id="mapdiv" style="height:50px;width:50px;"></div>
+
+<script>
+  "use strict";
+  {
+var map = L.map( "mapdiv", { attributionControl: false, } ).setView( [ 35.21145940282846, -97.44345712066671], 12 );
+
+L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo( map );;
+  
+  }
+</script>
+
+  </td>
 </tr>
 <?php
 }
