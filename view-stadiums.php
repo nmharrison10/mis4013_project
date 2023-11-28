@@ -78,16 +78,12 @@ while ($stadium = $stadiums->fetch_assoc()) {
 <style>
   .leaflet-control-container{
   box-shadow: none;
-    width: 20px;
-    height:40px;
 }
   .leaflet-control-zoom-in{
-  box-shadow: none;
     width: 10px;
     height:10px;
 }
-  .leaflet-control-zoom-in{
-  box-shadow: none;
+  .leaflet-control-zoom-out{
     width: 10px;
     height:10px;
 }
