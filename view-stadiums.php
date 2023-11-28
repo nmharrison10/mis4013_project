@@ -14,10 +14,10 @@ let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 });
-    tile.addTo(map);
+    map.AddLayer(tile);
   }
 </script>
-
+<?php echo $stadium['stadium_id']?>
 <div class="table-responsive">
   <table class="table">
     <head>
