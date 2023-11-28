@@ -3,7 +3,7 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>              
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
 
-<div id="mapdiv" style="height:200px;200px;"></div>
+<div id="mapdiv" style="height:200px;width:200px;"></div>
 
 <script>
   "use strict";
