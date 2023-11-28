@@ -18,7 +18,7 @@
           <form method="post" action="">
           <div class="mb-3">
             <label for="sName<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Name</label>
-            <input type="text" class="form-control" id="sName<?php echo $stadium['stadium_id'];?>" name="sName" value="<div class="mb-3">
+            <input type="text" class="form-control" id="sName<?php echo $stadium['stadium_id'];?>" name="sName" value="<?php echo $stadium['stadium_name'];?>">
           </div>
           <div class="mb-3">
             <label for="sLat<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Latitude</label>
