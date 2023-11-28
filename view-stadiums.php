@@ -74,3 +74,8 @@ while ($stadium = $stadiums->fetch_assoc()) {
 }}
 ?>
 </div>
+
+<script>
+var container = document.getElementsByClassName("leaflet-contol-container");
+  css(container, {height:20px;width:20px;});
+</script>
