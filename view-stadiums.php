@@ -1,4 +1,19 @@
 <h1>Stadiums</h1>
+
+<div id="mapdiv" style="height:400px;400px;"></div>
+
+<script>
+  "use strict";
+  {
+var map = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
+
+var tile = L.tileLayer( 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: ''
+} ).addTo( map );
+  }
+</script>
+
 <div class="table-responsive">
   <table class="table">
     <head>
