@@ -75,9 +75,9 @@ while ($stadium = $stadiums->fetch_assoc()) {
 ?>
 </div>
 
-<script>
-
-document.getElementsByClassName("leaflet-contol-zoom").style.height=5px;
-document.getElementsByClassName("leaflet-contol-zoom").style.width=5px;
-
-</script>
+<style>
+  .leaflet-bar{
+  box-shadow: none;
+    width: 100px;
+}
+</style>
