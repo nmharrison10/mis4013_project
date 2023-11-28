@@ -76,7 +76,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
 </div>
 
 <style>
-  .leaflet-bar{
+  .leaflet-control-container{
   box-shadow: none;
     width: 20px;
     height:40px;
