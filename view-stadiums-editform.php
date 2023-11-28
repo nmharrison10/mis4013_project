@@ -25,7 +25,7 @@
             <input type="text" class="form-control" id="sLat<?php echo $stadium['stadium_id'];?>" name="sLat" value="<?php echo $stadium['stadium_lat'];?>">
           </div>
           <div class="mb-3">
-            <label for="sLat<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Longitude</label>
+            <label for="sLong<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Longitude</label>
             <input type="text" class="form-control" id="sLong<?php echo $stadium['stadium_id'];?>" name="sLong" value="<?php echo $stadium['stadium_long'];?>">
           </div>
               <input type="hidden" name="sid" value="<?php echo $stadium['stadium_id'];?>">
