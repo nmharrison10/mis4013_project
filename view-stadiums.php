@@ -39,7 +39,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
 </tr>
 <?php
 if($stadium['stadium_id']==1){
-echo $stadium['stadium_id']
+echo $stadium['stadium_id'];
 }
 }
 ?>
