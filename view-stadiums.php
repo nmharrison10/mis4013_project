@@ -17,7 +17,6 @@ let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     map.AddLayer(tile);
   }
 </script>
-<?php echo $stadium['stadium_id']?>
 <div class="table-responsive">
   <table class="table">
     <head>
@@ -39,11 +38,11 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
 </tr>
 <?php
-}
-?>
 if(<?php echo $stadium['stadium_id']?>==1){
 <?php echo $stadium['stadium_id']?>
 }
+}
+?>
     </body>
   </table>
 </div>
