@@ -8,8 +8,7 @@
 <script>
   "use strict";
   {
-var map = L.map( "mapdiv", { attributionControl: false, } ).setView( [ 35.21145940282846, -97.44345712066671], 12
-    ).leaflet-control-container { position: flex; right: 20px } ;
+var map = L.map( "mapdiv", { attributionControl: false, zoomControl:false } ).setView( [ 35.21145940282846, -97.44345712066671], 12);
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
@@ -53,18 +52,6 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',
   {maxZoom: 10,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( map<?php echo $stadium['stadium_id']?> );
-    
-   /* let marker<?php echo $stadium['stadium_id']?> = L.marker( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?> ] );
-    marker<?php echo $stadium['stadium_lat']?>.bindPopup(<?php echo $stadium['stadium_name']?>);
-    marker<?php echo $stadium['stadium_id']?>.addTo(map<?php echo $stadium['stadium_id']?>);
-    marker<?php echo $stadium['stadium_id']?>.openPopup();
-  
-  if(marker<?php echo $stadium['stadium_id']?>!=null)
-    {
-        map.removeLayer(marker<?php echo $stadium['stadium_id']?>);
-        marker<?php echo $stadium['stadium_id']?>=null; 
-    }
-    */
     
   }
 </script>
