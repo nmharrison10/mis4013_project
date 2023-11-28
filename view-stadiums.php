@@ -9,7 +9,7 @@
   "use strict";
   {
 var map = L.map( "mapdiv", { attributionControl: false, } ).setView( [ 35.21145940282846, -97.44345712066671], 12
-    ).leaflet-control-container { position: absolute; right: 56px } ;
+    ).leaflet-control-container { position: flex; right: 20px } ;
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
