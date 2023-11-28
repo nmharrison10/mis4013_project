@@ -16,8 +16,8 @@ while ($stadium = $stadiums->fetch_assoc()) {
 <tr>
   <td><?php echo $stadium['stadium_id']?></td>
   <td><?php echo $stadium['stadium_name']?></td>
-  <td><?php echo $stadium['stadium_long']?></td>
   <td><?php echo $stadium['stadium_lat']?></td>
+  <td><?php echo $stadium['stadium_long']?></td>
 </tr>
 <?php
 }
