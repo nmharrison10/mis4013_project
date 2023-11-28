@@ -42,19 +42,27 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_lat']?></td>
   <td><?php echo $stadium['stadium_long']?></td>
   <td>
-
     <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:100px;width:100px;"></div>
 
 <script>
   "use strict";
   {
-var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 12 );
+var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 10 );
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
-    maxZoom: 20,
+    maxZoom: 10,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( map<?php echo $stadium['stadium_id']?> );;
-  
+
+    if(marker!=null)
+    {
+        map.removeLayer(marker);
+        marker=null;
+    }
+    marker<?php echo $stadium['stadium_id']?> = L.marker( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?> ] );
+    marker<?php echo $stadium['stadium_lat']?>.bindPopup(<?php echo $stadium['stadium_name']?>);
+    marker<?php echo $stadium['stadium_id']?>.addTo(map<?php echo $stadium['stadium_id']?>);
+    marker<?php echo $stadium['stadium_id']?>.openPopup();
   }
 </script>
 
@@ -65,14 +73,6 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
 ?>
     </body>
   </table>
-</div>
-<div>
-<?php
-while ($stadium = $stadiums->fetch_assoc()) {
-  if($stadium['stadium_id']==1){
-  echo $stadium['stadium_name'];
-}}
-?>
 </div>
 
 <style>
