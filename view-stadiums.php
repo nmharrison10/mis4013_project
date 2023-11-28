@@ -47,12 +47,12 @@ while ($stadium = $stadiums->fetch_assoc()) {
 <script>
   "use strict";
   {
-var map = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView( [ <?php $stadium['stadium_lat']?>, <?php $stadium['stadium_long']?>], 12 );
+var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 12 );
 
 L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
-}).addTo( map );;
+}).addTo( map<?php echo $stadium['stadium_id']?> );;
   
   }
 </script>
