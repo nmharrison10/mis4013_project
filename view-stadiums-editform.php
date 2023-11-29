@@ -36,7 +36,7 @@
           </form>
         </div>
           
-        <div id="mapdiv" style="margin:30;height:300;width:300;background-color:coral;">
+        <div id="mapdiv" style="margin:30">
             Testing
         </div>
         </div>
