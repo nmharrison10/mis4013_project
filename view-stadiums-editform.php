@@ -17,11 +17,11 @@
       <div class="modal-body">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8 col-sm-6" style="background-color:pink;height:200px;width:200px;">
+                <div class="col-6 col-sm" style="background-color:pink;">
 
                 </div>
-                <div class="col-8 col-sm6">
-                <div id="mapdiv" style="height:200px;width:200px;">
+                <div class="col-6 col-sm">
+                <div id="mapdiv" style="background-color:blue;">
                     Testing
                 </div>
               
