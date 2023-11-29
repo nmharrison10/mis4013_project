@@ -19,7 +19,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div id="map">
+        <div id="map" style="height:200px;width:200px;">
         </div>
       </div>
     </div>
