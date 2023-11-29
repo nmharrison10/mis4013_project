@@ -37,7 +37,7 @@
                               </form>
                 </div>
                 <div class="col-6 col-sm">
-                    <div id="mapdiv" style="height:80%;width:80%">
+                    <div id="mapdiv" style="height:100%;width:100%">
                     </div>
                 </div>
             </div>
@@ -50,11 +50,10 @@
 </div>
 <script>
 "use strict";
-var mapedit = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 5 );
+var mapedit = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 5 ).invalidateSize();
 
 let googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( mapedit );
-
 </script>
