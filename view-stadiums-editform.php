@@ -21,7 +21,7 @@
 
                 </div>
                 <div class="col-8 col-sm6">
-                <div id="mapdiv" style="margin:30">
+                <div id="mapdiv" style="margin:30px; height:200px;width:200px;">
                     Testing
                 </div>
               
