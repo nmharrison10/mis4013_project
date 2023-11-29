@@ -36,7 +36,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 // Comment out the below code to see the difference.
-$('#myModal').on('shown.bs.modal', function() {
+$('#editStadiumModal<?php echo $stadium['stadium_id'];?>').on('shown.bs.modal', function() {
   map.invalidateSize();
 });
 </script>
