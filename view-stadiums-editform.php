@@ -20,10 +20,7 @@
                 <div class="col-6 col-sm" style="background-color:pink;">
 
                 </div>
-                <div class="col-6 col-sm">
-                <div id="mapdiv" style="background-color:blue;">
-                    Testing
-                </div>
+                <div class="col-6 col-sm" id="mapdiv">
               
                 </div>
             </div>
