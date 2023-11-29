@@ -17,7 +17,7 @@
       <div class="modal-body">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-8 col-sm-6" style="background-color:pink;">
+                <div class="col-8 col-sm-6" style="background-color:pink;margin:30px; height:200px;width:200px;">
 
                 </div>
                 <div class="col-8 col-sm6">
