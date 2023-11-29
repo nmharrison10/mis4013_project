@@ -18,10 +18,26 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 col-sm" style="background-color:pink;">
-Test
+                                <form method="post" action="">
+                              <div class="mb-3">
+                                <label for="sName<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Name</label>
+                                <input type="text" class="form-control" id="sName<?php echo $stadium['stadium_id'];?>" name="sName" value="<?php echo $stadium['stadium_name'];?>">
+                              </div>
+                              <div class="mb-3">
+                                <label for="sLat<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Latitude</label>
+                                <input type="text" class="form-control" id="sLat<?php echo $stadium['stadium_id'];?>" name="sLat" value="<?php echo $stadium['stadium_lat'];?>">
+                              </div>
+                              <div class="mb-3">
+                                <label for="sLong<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Longitude</label>
+                                <input type="text" class="form-control" id="sLong<?php echo $stadium['stadium_id'];?>" name="sLong" value="<?php echo $stadium['stadium_long'];?>">
+                              </div>
+                                  <input type="hidden" name="sid" value="<?php echo $stadium['stadium_id'];?>">
+                              <input type="hidden" name="actionType" value="Edit">
+                              <button type="submit" class="btn btn-primary">Save</button>
+                              </form>
                 </div>
                 <div class="col-6 col-sm" id="mapdiv">
-              Test2
+              
                 </div>
             </div>
         
