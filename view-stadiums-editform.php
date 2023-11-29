@@ -58,6 +58,6 @@ let googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
 }).addTo( mapedit );
 
 $('#editStadiumModal<?php echo $stadium['stadium_id'];?>').on('shown.bs.modal', function() {
-  map.invalidateSize();
+  mapedit.invalidateSize();
 });
 </script>
