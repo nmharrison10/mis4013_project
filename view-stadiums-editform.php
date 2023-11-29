@@ -50,10 +50,14 @@
 </div>
 <script>
 "use strict";
-var mapedit = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 5 ).invalidateSize();
+var mapedit = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 5 );
 
 let googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     maxZoom: 30,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( mapedit );
+
+$('#editStadiumModal<?php echo $stadium['stadium_id'];?>').on('shown.bs.modal', function() {
+  map.invalidateSize();
+});
 </script>
