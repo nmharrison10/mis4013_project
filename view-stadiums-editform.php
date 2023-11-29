@@ -15,7 +15,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <div style="display:flex;flex-direction:row">
+        <div class="container-fluid">
                   <form method="post" action="">
                   <div class="mb-3">
                     <label for="sName<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Name</label>
@@ -33,10 +33,12 @@
                   <input type="hidden" name="actionType" value="Edit">
                   <button type="submit" class="btn btn-primary">Save</button>
                   </form>
-          
-        <div id="mapdiv" style="margin:30">
-            Testing
-        </div>
+          <div class="col-8 col-sm6">
+                <div id="mapdiv" style="margin:30">
+                    Testing
+                </div>
+          </div>
+        
         </div>
       </div>
     </div>
