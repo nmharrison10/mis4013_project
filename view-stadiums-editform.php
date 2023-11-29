@@ -31,6 +31,8 @@
                                 <label for="sLong<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Longitude</label>
                                 <input type="text" class="form-control" id="sLong<?php echo $stadium['stadium_id'];?>" name="sLong" value="<?php echo $stadium['stadium_long'];?>">
                               </div>
+                                    <div id="maptest">
+                                    </div>
                                   <input type="hidden" name="sid" value="<?php echo $stadium['stadium_id'];?>">
                               <input type="hidden" name="actionType" value="Edit">
                               <button type="submit" class="btn btn-primary">Save</button>
@@ -55,6 +57,14 @@ let googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo( mapedit );
+
+var maptest = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
+
+let googleSat = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo( maptest );
+
 
 
 </script>
