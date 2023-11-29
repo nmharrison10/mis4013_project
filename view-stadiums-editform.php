@@ -35,10 +35,35 @@
           </form>
         </div>
           
-        <div style="height:200;width:200;background-color:coral;">
+        <div id="mapdiv" style="margin:20;height:70%;width:70%;background-color:coral;">
             Testing
         </div>
       </div>
     </div>
   </div>
 </div>
+<script>
+"use strict";
+var map = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
+
+L.tileLayer( 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: ''
+} ).addTo( map );
+
+map.on("click",function(e){
+    t=e;
+    document.querySelector( "#lat" ).value =e.latlng.lat;
+    document.querySelector( "#lon" ).value =e.latlng.lng;
+
+    if(marker!=null)
+    {
+        map.removeLayer(marker);
+        marker=null;
+    }
+    marker = L.marker( [ e.latlng.lat, e.latlng.lng ] );
+    marker.addTo(map);
+
+});
+
+</script>
