@@ -18,10 +18,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-6 col-sm" style="background-color:pink;">
-
+Test
                 </div>
                 <div class="col-6 col-sm" id="mapdiv">
-              
+              Test2
                 </div>
             </div>
         
