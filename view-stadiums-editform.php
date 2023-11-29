@@ -44,26 +44,12 @@
 </div>
 <script>
 "use strict";
-var map = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
+var mapedit = L.map( 'mapdiv', { attributionControl: false, } ).setView( [ 35.33443889141701, -97.07270547900498 ], 12 );
 
 L.tileLayer( 'https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: ''
-} ).addTo( map );
+} ).addTo( mapedit );
 
-map.on("click",function(e){
-    t=e;
-    document.querySelector( "#lat" ).value =e.latlng.lat;
-    document.querySelector( "#lon" ).value =e.latlng.lng;
-
-    if(marker!=null)
-    {
-        map.removeLayer(marker);
-        marker=null;
-    }
-    marker = L.marker( [ e.latlng.lat, e.latlng.lng ] );
-    marker.addTo(map);
-
-});
 
 </script>
