@@ -4,6 +4,7 @@ require_once("model-countries.php");
 
 $pageTitle = "Countries";
 include "view-header.php";
+?>
 
   <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
@@ -42,8 +43,9 @@ include "view-header.php";
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>    
+</div>
 
+<?php
 if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
