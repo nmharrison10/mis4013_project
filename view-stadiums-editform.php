@@ -62,7 +62,7 @@
   var map = L.map('map', { attributionControl: false, zoomControl:false, } ).setView( 
      [ document.getElementById('sLat<?php echo $stadium['stadium_id'];?>').value, document.getElementById('sLong<?php echo $stadium['stadium_id'];?>').value], 15 );
 
-marker = L.marker([ document.getElementById('sLat<?php echo $stadium['stadium_id'];?>').value, document.getElementById('sLong<?php echo $stadium['stadium_id']);
+marker = L.marker([ document.getElementById('sLat<?php echo $stadium['stadium_id'];?>').value, document.getElementById('sLong<?php echo $stadium['stadium_id'];?>').value]);
 marker.bindPopup( `<?php echo $stadium['stadium_name'];?>` );
 marker.addTo(map);
 marker.openPopup();
