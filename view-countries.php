@@ -6,9 +6,6 @@
 <?php
 include "view-countries-newform.php";
 ?>
-<?php
-include "view-countries-editform.php";
-?>
   </div>
 </div>
 <div class="table-responsive">
@@ -34,7 +31,6 @@ while ($country = $countries->fetch_assoc()) {
 <?php
 include "view-countries-editform.php";
 ?>
-  
   </td>
   <td>
     <form method="post" action="">
