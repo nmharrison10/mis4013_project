@@ -6,6 +6,9 @@
 <?php
 include "view-countries-newform.php";
 ?>
+<?php
+include "view-countries-editform.php";
+?>
   </div>
 </div>
 <div class="table-responsive">
