@@ -22,7 +22,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="editStadiumModalLabel<?php echo $stadium['stadium_id'];?>">Edit Stadium</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
           <div class="container-fluid">
@@ -54,9 +54,6 @@
         </div>
 
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
     </div>
   </div>
 </div>
@@ -65,9 +62,11 @@
   var map = L.map('map', { attributionControl: false, zoomControl:false, } ).setView( 
      [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 15 );
 
-L.marker([<?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>]).addTo(map);
+marker = L.marker([<?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>]);
+marker.bindPopup( `<?php echo $stadium['stadium_name'];?>` );
+marker.addTo(map);
 
-let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     maxZoom: 20,
     subdomains:['mt0','mt1','mt2','mt3']
 }).addTo(map);
