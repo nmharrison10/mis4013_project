@@ -46,7 +46,7 @@
                               <button type="submit" class="btn btn-primary">Save</button>
                               </form>
                 </div>
-                <div class="col-6 col-sm">
+                <div class="col-6 col-sm" style="display:flex; flex-direction:row; align-items:center;justify-content:center">
                     <div id="map" style="height:180px">
                     </div>
                 </div>
@@ -60,11 +60,12 @@
 
 <script>
   var map = L.map('map', { attributionControl: false, zoomControl:false, } ).setView( 
-     [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 15 );
+     [ document.getElementById('sLat<?php echo $stadium['stadium_id'];?>').value, document.getElementById('sLong<?php echo $stadium['stadium_id'];?>').value], 15 );
 
-marker = L.marker([<?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>]);
+marker = L.marker([ document.getElementById('sLat<?php echo $stadium['stadium_id'];?>').value, document.getElementById('sLong<?php echo $stadium['stadium_id']);
 marker.bindPopup( `<?php echo $stadium['stadium_name'];?>` );
 marker.addTo(map);
+marker.openPopup();
 
 let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     maxZoom: 20,
