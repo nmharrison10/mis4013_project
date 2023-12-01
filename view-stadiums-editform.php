@@ -47,7 +47,7 @@
                               </form>
                 </div>
                 <div class="col-6 col-sm">
-                    <div id="map" style="margin:20px">
+                    <div id="map" style="height:180px">
                     </div>
                 </div>
             </div>
