@@ -47,7 +47,7 @@
                               </form>
                 </div>
                 <div class="col-6 col-sm">
-                    <div id="map" style="height:180px">
+                    <div id="map" style="margin:20px">
                     </div>
                 </div>
             </div>
@@ -62,12 +62,14 @@
 </div>
 
 <script>
-  var map = L.map('map').setView([48.86, 2.35], 11);
+  var map = L.map('map', { attributionControl: false, zoomControl:false, } ).setView( 
+     [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 15 );
 
-L.marker([48.86, 2.35]).addTo(map);
+L.marker([<?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>]).addTo(map);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+let tile = L.tileLayer('http://{s}.google.com/vt/lyrs=m&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
 }).addTo(map);
 
 $('#editStadiumModal<?php echo $stadium['stadium_id'];?>').on('shown.bs.modal', function() {
