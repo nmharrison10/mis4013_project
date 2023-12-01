@@ -43,13 +43,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-// Comment out the below code to see the difference.
 $('#myModal').on('shown.bs.modal', function() {
   map.invalidateSize();
 });
 </script>
-// Comment out the below code to see the difference.
-$('#editStadiumModal<?php echo $stadium['stadium_id'];?>').on('shown.bs.modal', function(e) {
-  map.invalidateSize();
-});
-</script>
+
