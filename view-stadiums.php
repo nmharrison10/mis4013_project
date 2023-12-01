@@ -3,9 +3,7 @@
 <h1>Stadiums</h1>
   </div>
   <div class="col-auto">
-    <?php
-    include "view-stadiums-editform.php";
-    ?>
+
   </div>
 </div>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>              
