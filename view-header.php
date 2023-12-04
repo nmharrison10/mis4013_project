@@ -31,6 +31,9 @@
          <li class="nav-item">
           <a class="nav-link" href="fifa.php">Fifa Cards</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="goals.php">Goals</a>
+        </li>
          <li class="nav-item">
           <a class="nav-link"></a>
         </li>
