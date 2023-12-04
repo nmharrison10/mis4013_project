@@ -19,12 +19,16 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="cName" class="form-label">Country Name</label>
-            <input type="text" class="form-control" id="cName" name="cName">
+            <label for="gScorer" class="form-label">Scorer ID</label>
+            <input type="text" class="form-control" id="gScorer" name="gScorer">
           </div>
           <div class="mb-3">
-            <label for="capName" class="form-label">Country Capital</label>
-            <input type="text" class="form-control" id="capName" name="capName">
+            <label for="gAssister" class="form-label">Assister ID</label>
+            <input type="text" class="form-control" id="gAssister" name="gAssister">
+          </div>
+          <div class="mb-3">
+            <label for="gGame" class="form-label">Game ID</label>
+            <input type="text" class="form-control" id="gGame" name="gGame">
           </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
