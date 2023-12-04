@@ -13,20 +13,22 @@ include "view-goals-newform.php";
     <head>
       <tr>
       <th>ID</th>
-      <th>Country</th>
-      <th>Capital</th>
+      <th>Scorer ID</th>
+      <th>Assister ID</th>
+      <th>Game ID</th>
       <th></th>
       <th></th>
       </tr>
     </head>
     <body>
 <?php
-while ($country = $countries->fetch_assoc()) {
+while ($goal = $goals->fetch_assoc()) {
 ?>
 <tr>
-  <td><?php echo $country['country_id']?></td>
-  <td><?php echo $country['country_name']?></td>
-  <td><?php echo $country['capital']?></td>
+  <td><?php echo $goal['goal_id']?></td>
+  <td><?php echo $goal['scorer_id']?></td>
+  <td><?php echo $goal['assister_id']?></td>
+  <td><?php echo $goal['game_id']?></td>
   <td>
 <?php
 include "view-goals-editform.php";
@@ -34,7 +36,7 @@ include "view-goals-editform.php";
   </td>
   <td>
     <form method="post" action="">
-      <input type="hidden" name="cid" value="<?php echo $country['country_id'];?>">
+      <input type="hidden" name="gid" value="<?php echo $goal['goal_id'];?>">
       <input type="hidden" name="actionType" value="Delete">
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
