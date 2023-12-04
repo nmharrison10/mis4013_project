@@ -2,7 +2,7 @@
 function selectGoals() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT goal_id, scorer_id, asssister_id, game_id FROM `goal`");
+        $stmt = $conn->prepare("SELECT goal_id, scorer_id, assister_id, game_id FROM `goal`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
