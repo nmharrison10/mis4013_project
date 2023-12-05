@@ -29,7 +29,7 @@
           <a class="nav-link" href="players.php">Players</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link" href="fifa.php">Fifa Cards</a>
+          <a class="nav-link" href="about-the-players.php">About the Players</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="goals.php">Goals</a>
