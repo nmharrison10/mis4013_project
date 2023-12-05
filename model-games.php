@@ -44,7 +44,7 @@ function insertGame($t1id, $t1s, $t2id, $t2s, $sid, $date) {
 function updateGame($t1id, $t1s, $t2id, $t2s, $sid, $date, $gid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("UPDATE `game` SET `game_id` = ?, `team1_id` = ?, `team1_score` = ?, `team2_id` = ?, `team2_score` = ?, `stadium_id` = ?, `date` = ? WHERE `game`.`game_id` = ?");
+        $stmt = $conn->prepare("UPDATE `game` SET `team1_id` = ?, `team1_score` = ?, `team2_id` = ?, `team2_score` = ?, `stadium_id` = ?, `date` = ? WHERE `game`.`game_id` = ?");
         $stmt->bind_param("iiiiisi", $t1id, $t1s, $t2id, $t2s, $sid, $date, $gid);
         $success=$stmt->execute();
         $conn->close();
