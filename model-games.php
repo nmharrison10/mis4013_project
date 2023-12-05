@@ -2,7 +2,7 @@
 function selectGames() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT game_id, team1_id, team1_score, team2_id, team2_score, stadium_id, date FROM `game`");
+        $stmt = $conn->prepare("SELECT game_id, team1_id, club1.club_name, team1_score, team2_id, club2.club_name, team2_score, stadium_id, date FROM `game` join `club` club1 on game.team1_id=club1.club_id join `club` club2 on game.team2_id=club2.club_id;");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
