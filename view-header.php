@@ -35,7 +35,7 @@
           <a class="nav-link" href="goals.php">Goals</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link"></a>
+          <a class="nav-link" href="games.php">Games</a>
         </li>
       </ul>
     </div>
