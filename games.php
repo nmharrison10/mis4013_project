@@ -8,7 +8,7 @@ include "view-header.php";
 if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
-    if(insertGame($_POST['t1id'], $_POST['t1s'],$_POST['t2id'],,$_POST['t2s'],$_POST['sid'],$_POST['date'])) {
+    if(insertGame($_POST['t1id'], $_POST['t1s'],$_POST['t2id'],$_POST['t2s'],$_POST['sid'],$_POST['date'])) {
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Race Added</div>';
     }
     else{
