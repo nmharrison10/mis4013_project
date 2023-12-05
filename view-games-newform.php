@@ -19,28 +19,28 @@
 
       <form method="post" action="">
           <div class="mb-3">
-            <label for="track" class="form-label">Team 1 ID</label>
+            <label for="t1id" class="form-label">Team 1 ID</label>
             <input type="text" class="form-control" id="t1id" name="t1id">
           </div>
           <div class="mb-3">
-            <label for="date" class="form-label">Team 1 Score</label>
+            <label for="t1s" class="form-label">Team 1 Score</label>
             <input type="text" class="form-control" id="t1s" name="t1s">
           </div>
          <div class="mb-3">
-            <label for="date" class="form-label">Team 2 ID</label>
+            <label for="t2id" class="form-label">Team 2 ID</label>
             <input type="text" class="form-control" id="t2id" name="t2id">
           </div>
          <div class="mb-3">
-            <label for="date" class="form-label">Team 2 Score</label>
+            <label for="t2s" class="form-label">Team 2 Score</label>
             <input type="text" class="form-control" id="t2s" name="t2s">
           </div>
         <div class="mb-3">
-            <label for="date" class="form-label">Stadium ID</label>
+            <label for="sid" class="form-label">Stadium ID</label>
             <input type="text" class="form-control" id="sid" name="sid">
           </div>
          <div class="mb-3">
             <label for="date" class="form-label">Date</label>
-            <input type="date" class="form-control" id="did" name="did">
+            <input type="date" class="form-control" id="date" name="date">
           </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
