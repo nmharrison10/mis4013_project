@@ -28,9 +28,9 @@ while ($game = $games->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $game['game_id']; ?></td>
-  <td><?php echo $game['club1.club_name']; ?></td>
+  <td><?php echo $game['team1_name']; ?></td>
   <td><?php echo $game['team1_score']; ?></td>
-  <td><?php echo $game['club2.club_name']; ?></td>
+  <td><?php echo $game['team2_name']; ?></td>
   <td><?php echo $game['team2_score']; ?></td>
   <td>
     <?php
