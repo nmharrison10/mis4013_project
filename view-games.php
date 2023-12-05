@@ -14,9 +14,9 @@ include "view-games-newform.php";
     <head>
       <tr>
       <th>Game ID</th>
-      <th>Team 1 ID</th>
+      <th>Team 1</th>
       <th>Team 1 Score</th>
-      <th>Team 2 ID</th>
+      <th>Team 2</th>
       <th>Team 2 Score</th>
       <th></th>
       <th></th>
@@ -28,9 +28,9 @@ while ($game = $games->fetch_assoc()) {
 ?>
 <tr>
   <td><?php echo $game['game_id']; ?></td>
-  <td><?php echo $game['team1_id']; ?></td>
+  <td><?php echo $game['club1.club_name']; ?></td>
   <td><?php echo $game['team1_score']; ?></td>
-  <td><?php echo $game['team2_id']; ?></td>
+  <td><?php echo $game['club2.club_name']; ?></td>
   <td><?php echo $game['team2_score']; ?></td>
   <td>
     <?php
