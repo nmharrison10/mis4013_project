@@ -27,7 +27,7 @@
         </li>
          <li class="nav-item">
           <a class="nav-link" href="players.php">Players</a>
-        </li>
+         </li>
          <li class="nav-item">
           <a class="nav-link" href="about-the-players.php">About the Players</a>
         </li>
@@ -36,7 +36,10 @@
         </li>
          <li class="nav-item">
           <a class="nav-link" href="games.php">Games</a>
-        </li>
+         </li>
+           <li class="nav-item">
+          <a class="nav-link" href="clubs.php">Clubs</a>
+           </li>
       </ul>
     </div>
   </div>
