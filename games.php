@@ -9,7 +9,7 @@ if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
     if(insertGame($_POST['t1id'], $_POST['t1s'],$_POST['t2id'],$_POST['t2s'],$_POST['sid'],$_POST['date'])) {
-  echo '<div style="margin:15px" class="alert alert-success" role="alert">Race Added</div>';
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Game Added</div>';
     }
     else{
 echo '<div class="alert alert-danger" role="alert">Error</div>"';
@@ -24,7 +24,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Edit":
-    if(updateGame($_POST['did'], $_POST['track'], $_POST['date'],$_POST['date'],$_POST['gid'])) {
+    if(updateGame($_POST['t1id'], $_POST['t1s'],$_POST['t2id'],$_POST['t2s'],$_POST['sid'],$_POST['date'],$_POST['gid'] )) {
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Game Edited</div>';
     }
     else{
