@@ -31,8 +31,9 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_lat']?></td>
   <td><?php echo $stadium['stadium_long']?></td>
   <td>
+    <!--
     <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:100px;width:100px;"></div>
-<script>
+    <script>
   "use strict";
   {
 var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, zoomControl:false, 
@@ -45,6 +46,7 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     
   }
 </script>
+    -->
   </td>
   <td>
     <?php
