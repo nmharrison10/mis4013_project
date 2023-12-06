@@ -10,7 +10,7 @@ include "view-header.php";
 <head>
 <style>
 body {
-  background-image: url('soccer2.jpeg');
+  background-image: url('soccer3.webp');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
