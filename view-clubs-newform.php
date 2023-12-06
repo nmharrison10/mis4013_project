@@ -12,7 +12,6 @@
     <div class="modal-content">
       <div class="modal-header">
         <h1 class="modal-title fs-5" id="newClubModalLabel">New Club</h1>
-        <div>Note : Please only add clubs the core players are on.</div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
