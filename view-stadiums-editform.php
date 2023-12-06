@@ -34,6 +34,10 @@
                                 <input type="text" class="form-control" id="sName<?php echo $stadium['stadium_id'];?>" name="sName" value="<?php echo $stadium['stadium_name'];?>">
                               </div>
                               <div class="mb-3">
+                                <label for="sLoc<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Location</label>
+                                <input type="text" class="form-control" id="sLoc<?php echo $stadium['stadium_id'];?>" name="sLoc" value="<?php echo $stadium['location'];?>">
+                              </div>
+                              <div class="mb-3">
                                 <label for="sLat<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Latitude</label>
                                 <input type="text" class="form-control" id="sLat<?php echo $stadium['stadium_id'];?>" name="sLat" value="<?php echo $stadium['stadium_lat'];?>">
                               </div>
