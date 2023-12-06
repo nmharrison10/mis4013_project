@@ -21,31 +21,31 @@
         </li>
         
        <li class="nav-item">
-          <a class="nav-link" href="players.php">Players</a>
+          <a class="nav-link" href="players.php" data-ol-has-click-handler="">Players</a>
         </li>
 
          <li class="nav-item">
-            <a class="nav-link" href="clubs.php">Clubs</a>
+            <a class="nav-link" href="clubs.php" data-ol-has-click-handler="">Clubs</a>
           </li>
       
         <li class="nav-item">
-          <a class="nav-link" href="countries.php">Countries</a>
+          <a class="nav-link" href="countries.php" data-ol-has-click-handler="">Countries</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="goals.php">Goals</a>
+          <a class="nav-link" href="goals.php" data-ol-has-click-handler="">Goals</a>
         </li>
         
          <li class="nav-item">
-          <a class="nav-link" href="games.php">Games</a>
+          <a class="nav-link" href="games.php" data-ol-has-click-handler="">Games</a>
          </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="stadiums.php">Stadiums</a>
+          <a class="nav-link" href="stadiums.php" data-ol-has-click-handler="">Stadiums</a>
         </li>
           
         <li class="nav-item">
-          <a class="nav-link" href="about-the-players.php">About the Players</a>
+          <a class="nav-link" href="about-the-players.php" data-ol-has-click-handler="">About the Players</a>
         </li>
 
       </ul>
