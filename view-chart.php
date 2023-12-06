@@ -1,5 +1,5 @@
 
-<?php
+
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
 $pageTitle = "Chart";
@@ -7,8 +7,7 @@ include "view-header.php";
 
 <h1>How many goals has each team scored in FIFA World Cup History?</h1>
 <body>
-<div
-id="myChart" style="width:100%; max-width:600px; height:500px;">
+<div id="myChart" style="width:100%; max-width:600px; height:500px;">
 </div>
 
 <script>
@@ -39,5 +38,6 @@ chart.draw(data, options);
 
 </body>
 
+<?php
 include "view-footer.php";
 ?>
