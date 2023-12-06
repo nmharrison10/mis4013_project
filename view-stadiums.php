@@ -24,9 +24,6 @@
     <body>
 <?php
 while ($stadium = $stadiums->fetch_assoc()) {
-  if($stadium['stadium_id']==1){
-  echo $stadium['stadium_id'];
-}
 ?>
 <tr>
   <td><?php echo $stadium['stadium_id']?></td>
