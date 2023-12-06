@@ -16,7 +16,7 @@ include "view-clubs-newform.php";
        <th>Club ID</th>
       <th>Club Name</th>
       <th>Coach's Name</th>
-      <th>Club's Name</th> 
+      <th>Club's Location</th> 
       <th></th> 
       <th></th> 
       <th></th> 
