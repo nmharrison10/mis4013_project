@@ -16,30 +16,39 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/">Home</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="stadiums.php">Stadiums</a>
+        
+       <li class="nav-item">
+          <a class="nav-link" href="players.php">Players</a>
         </li>
+
+         <li class="nav-item">
+            <a class="nav-link" href="clubs.php">Clubs</a>
+          </li>
+      
         <li class="nav-item">
           <a class="nav-link" href="countries.php">Countries</a>
         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="players.php">Players</a>
-         </li>
-         <li class="nav-item">
-          <a class="nav-link" href="about-the-players.php">About the Players</a>
-        </li>
+
         <li class="nav-item">
           <a class="nav-link" href="goals.php">Goals</a>
         </li>
+        
          <li class="nav-item">
           <a class="nav-link" href="games.php">Games</a>
          </li>
-           <li class="nav-item">
-          <a class="nav-link" href="clubs.php">Clubs</a>
-           </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="stadiums.php">Stadiums</a>
+        </li>
+          
+        <li class="nav-item">
+          <a class="nav-link" href="about-the-players.php">About the Players</a>
+        </li>
+        
       </ul>
     </div>
   </div>
