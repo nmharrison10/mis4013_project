@@ -6,7 +6,7 @@ include "view-header.php";
 
 <div class="row">
   <div class = "col">
-  <h1>"About the Players</h1>
+  <h1>About the Players</h1>
     <h5><a href="view-chart.html">FIFA WC Goals</a></h5>
   </div>
   <div class = "col-auto">
