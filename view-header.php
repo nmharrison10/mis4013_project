@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
            <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
+          <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
         
        <li class="nav-item">
@@ -49,10 +49,6 @@
         </li>
 
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-secondary my-2 my-sm-0" type="submit" data-ol-has-click-handler="">Search</button>
-      </form>
     </div>
   </div>
 </nav>
