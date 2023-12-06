@@ -6,48 +6,43 @@
     <title><?=$pageTitle?></title>
     <link rel = "stylesheet" href = "bootstrap.css">
   </head>
-  <body>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark" style="max-width:100%;">
+
+  <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
+    <a class="navbar-brand" href="#" data-ol-has-click-handler="">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarColor01">
       <ul class="navbar-nav me-auto">
-           <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Home</a>
-        </li>
-        
-       <li class="nav-item">
-          <a class="nav-link" href="players.php" data-ol-has-click-handler="">Players</a>
-        </li>
-
-         <li class="nav-item">
-            <a class="nav-link" href="clubs.php" data-ol-has-click-handler="">Clubs</a>
-          </li>
-      
         <li class="nav-item">
-          <a class="nav-link" href="countries.php" data-ol-has-click-handler="">Countries</a>
+          <a class="nav-link active" href="" data-ol-has-click-handler="">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
         </li>
-
         <li class="nav-item">
-          <a class="nav-link" href="goals.php" data-ol-has-click-handler="">Goals</a>
+          <a class="nav-link" href="#" data-ol-has-click-handler="">Features</a>
         </li>
-        
-         <li class="nav-item">
-          <a class="nav-link" href="games.php" data-ol-has-click-handler="">Games</a>
-         </li>
-        
         <li class="nav-item">
-          <a class="nav-link" href="stadiums.php" data-ol-has-click-handler="">Stadiums</a>
+          <a class="nav-link" href="#" data-ol-has-click-handler="">Pricing</a>
         </li>
-          
         <li class="nav-item">
-          <a class="nav-link" href="about-the-players.php" data-ol-has-click-handler="">Favorite Players</a>
+          <a class="nav-link" href="#" data-ol-has-click-handler="">About</a>
         </li>
-
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-ol-has-click-handler="">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-ol-has-click-handler="">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-ol-has-click-handler="">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-ol-has-click-handler="">About</a>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
+
