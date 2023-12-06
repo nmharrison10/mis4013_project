@@ -14,7 +14,7 @@ include "view-goals-newform.php";
     <head>
       <tr>
       <th>ID</th>
-      <th>Scorer ID</th>
+      <th>Player ID</th>
       <th>Assister ID</th>
       <th>Game ID</th>
       <th></th>
