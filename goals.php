@@ -2,6 +2,9 @@
 require_once("util-db.php");
 require_once("model-goals.php");
 
+$pageTitle = "Goals";
+include "view-header.php";
+
 if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
