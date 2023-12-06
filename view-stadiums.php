@@ -17,7 +17,7 @@ include "view-stadiums-newform.php";
       <th>Name</th>
       <th>Longitude</th>
       <th>Latitude</th>
-      <th>Test</th>
+      <th>Location</th>
       <th></th>
       <th></th>
       </tr>
@@ -32,7 +32,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_lat']?></td>
   <td><?php echo $stadium['stadium_long']?></td>
   <td>
-    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:100px;width:100px;"></div>
+    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:200px;width:200px;"></div>
 <script>
   "use strict";
   {
