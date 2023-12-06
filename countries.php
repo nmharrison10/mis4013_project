@@ -21,7 +21,7 @@ include "view-header.php";
       </div>
     </div>
     <div class="carousel-item">
-      <img src="england.jpeg" class="d-block w-100" alt="...">
+      <img src="england.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>England</h5>
         <p>Home to 57 leagues.</p>
