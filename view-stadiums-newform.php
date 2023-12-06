@@ -25,6 +25,10 @@
             <label for="sLat" class="form-label">Stadium Latitude</label>
             <input type="text" class="form-control" id="sLat" name="sLat">
           </div>
+          <div class="mb-3">
+            <label for="sLong" class="form-label">Stadium Longitude</label>
+            <input type="text" class="form-control" id="sLong" name="sLong">
+          </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
             </form>
