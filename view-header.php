@@ -45,7 +45,7 @@
         </li>
           
         <li class="nav-item">
-          <a class="nav-link" href="about-the-players.php" data-ol-has-click-handler="">About the Players</a>
+          <a class="nav-link" href="about-the-players.php" data-ol-has-click-handler="">Favorite Players</a>
         </li>
 
       </ul>
