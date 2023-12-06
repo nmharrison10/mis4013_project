@@ -16,7 +16,7 @@ include "view-header.php";
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="SR.jpeg" class="img-fluid rounded-start" alt="...">
+      <img src="SR.jpeg" class="img-fluid rounded-start" alt="Picture of Sergio Ramos">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -48,7 +48,7 @@ include "view-header.php";
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="G.jpeg" class="img-fluid rounded-start" alt="...">
+      <img src="G.jpeg" class="img-fluid rounded-start" alt="Picture of Gavi">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -80,7 +80,7 @@ include "view-header.php";
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="HK.jpeg" class="img-fluid rounded-start" alt="...">
+      <img src="HK.jpeg" class="img-fluid rounded-start" alt="Picture of Harry Kane">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -112,7 +112,7 @@ include "view-header.php";
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="JB.jpeg" class="img-fluid rounded-start" alt="...">
+      <img src="JB.jpeg" class="img-fluid rounded-start" alt="Picture of Jude Belligham">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -144,7 +144,7 @@ include "view-header.php";
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="KH.jpeg" class="img-fluid rounded-start" alt="...">
+      <img src="KH.jpeg" class="img-fluid rounded-start" alt="Picture of Kai Havertz">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -176,11 +176,11 @@ include "view-header.php";
 <div class="card mb-3" style="max-width: 540px;">
   <div class="row g-0">
     <div class="col-md-4">
-      <img src="NK.jpeg" class="img-fluid rounded-start" alt="center">
+      <img src="NK.jpeg" class="img-fluid rounded-start" alt="Picture of Niclas Fullkrug">
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Niclas Fullkrug</h5>
+        <h5 class="card-title">Niclas Füllkrug</h5>
     <p class = "card-text" style="text-align:left;">
         77 PAC
         <span style="float:right;">
