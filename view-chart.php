@@ -2,8 +2,10 @@
 
 <script src="https://www.gstatic.com/charts/loader.js"></script>
 
+<?php
 $pageTitle = "Chart";
 include "view-header.php";
+?>
 
 <h1>How many goals has each team scored in FIFA World Cup History?</h1>
 <body>
