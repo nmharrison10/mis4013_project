@@ -12,7 +12,7 @@ include "view-header.php";
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
-  <div class="carousel-inner" style="height:100px;">
+  <div class="carousel-inner" style="height:300px;">
     <div class="carousel-item active">
       <img src="spain.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
