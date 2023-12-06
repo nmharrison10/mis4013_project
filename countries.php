@@ -19,7 +19,6 @@ body {
 </style>
 </head>
 <body>
-  <h1 style = "color:white;">MIS4013 Project</h1>
 </body>
 </html>
 
