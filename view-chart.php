@@ -1,7 +1,11 @@
-<!DOCTYPE html>
-<html><script src="https://www.gstatic.com/charts/loader.js"></script>
 
-<h1>How many goals has each team scored in the FIFA World Cup?</h1>
+<?php
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+
+$pageTitle = "Chart";
+include "view-header.php";
+
+<h1>How many goals has each team scored in FIFA World Cup History?</h1>
 <body>
 <div
 id="myChart" style="width:100%; max-width:600px; height:500px;">
@@ -34,3 +38,6 @@ chart.draw(data, options);
 </script>
 
 </body>
+
+include "view-footer.php";
+?>
