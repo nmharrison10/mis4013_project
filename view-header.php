@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?=$pageTitle?></title>
-    <link rel = "stylesheet" href = "bootstrap.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>              
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
+    <link rel = "stylesheet" href = "bootstrap.css">
   </head>
   <body>
     <div class="container">
