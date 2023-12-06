@@ -8,8 +8,6 @@ include "view-stadiums-newform.php";
 ?>
   </div>
 </div>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>              
-<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
 <div class="table-responsive">
   <table class="table">
     <head>
