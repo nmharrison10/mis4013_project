@@ -6,23 +6,6 @@ $pageTitle = "Countries";
 include "view-header.php";
 ?>
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-image: url('BCG.png');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-</style>
-</head>
-<body>
-</body>
-</html>
-
-
   <div id="carouselExampleCaptions" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
