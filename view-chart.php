@@ -7,7 +7,7 @@ $pageTitle = "Chart";
 include "view-header.php";
 ?>
 
-<h1>How many goals has each team scored in FIFA World Cup History?</h1>
+<h1>FIFA World Cup Stats</h1>
 <body>
 <div id="myChart" style="width:100%; max-width:600px; height:500px;">
 </div>
