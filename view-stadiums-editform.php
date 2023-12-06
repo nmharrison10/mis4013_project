@@ -27,7 +27,7 @@
       <div class="modal-body">
           <div class="container-fluid">
             <div class="row">
-                <div class="col-6 col-sm" style="background-color:pink;">
+                <div class="col-6 col-sm">
                             <form method="post" action="">
                               <div class="mb-3">
                                 <label for="sName<?php echo $stadium['stadium_id'];?>" class="form-label">Stadium Name</label>
@@ -57,7 +57,7 @@
     </div>
   </div>
 </div>
-
+<!--
 <script>
   var map = L.map('map', { attributionControl: false, zoomControl:false, } ).setView( 
      [ document.getElementById('sLat<?php echo $stadium['stadium_id'];?>').value, document.getElementById('sLong<?php echo $stadium['stadium_id'];?>').value], 15 );
@@ -76,4 +76,4 @@ $('#editStadiumModal<?php echo $stadium['stadium_id'];?>').on('shown.bs.modal', 
   map.invalidateSize();
 });
 </script>
-
+-->
