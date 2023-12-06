@@ -14,7 +14,7 @@ include "view-header.php";
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="spain.png" class="d-block w-100" alt="...">
+      <img src="spain2.png" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>Spain</h5>
         <p>Home to 6 leagues.</p>
