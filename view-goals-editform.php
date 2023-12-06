@@ -26,7 +26,7 @@
             <input type="text" class="form-control" id="gAssister<?php echo $goal['goal_id'];?>" name="gAssister" value="<?php echo $goal['assister_id'];?>">
           </div>
          <div class="mb-3">
-            <label for="gGame<?php echo $goal['goal_id'];?>" class="form-label">Assister ID</label>
+            <label for="gGame<?php echo $goal['goal_id'];?>" class="form-label">Goal ID</label>
             <input type="text" class="form-control" id="gGame<?php echo $goal['goal_id'];?>" name="gGame" value="<?php echo $goal['game_id'];?>">
           </div>
               <input type="hidden" name="gid" value="<?php echo $goal['goal_id'];?>">
