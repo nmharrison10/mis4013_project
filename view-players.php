@@ -13,8 +13,8 @@ include "view-players-newform.php";
   <table class="table">
     <thead>
       <tr class="table-primary">
-       <th scope="row">Player's ID</th>
-      <th>Player's Name</th>
+       <th>Player's ID</th>
+      <th >Player's Name</th>
       <th>Player's Age</th>
       <th></th> 
       <th></th> 
