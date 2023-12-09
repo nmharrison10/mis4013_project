@@ -1,13 +1,13 @@
 <select class="form-select" id="cName" name="cName">
   <?php
-    while ($countryItem =$countryList->fetch_assoc()){
+    while ($countrynameItem =$countryList->fetch_assoc()){
       $selText = "";
-      if ($selectedCountry == $countryItem['country_name']){
+      if ($selectedCountryname == $countryItem['country_name']){
         $selText = "selected";
 
       }
       ?>
-      <option value="<?php echo $countryItem['country_name'];?>"<?=$selText?>><?php echo $countryItem['country_name'];?></option>
+      <option value="<?php echo $countrynameItem['country_name'];?>"<?=$selText?>><?php echo $countrynameItem['country_name'];?></option>
   <?php
     }
     ?>
