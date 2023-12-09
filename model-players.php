@@ -16,7 +16,7 @@ function selectPlayers() {
 function selectPlayersForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT player_id, player_name, player_age FROM player order by player_name");
+        $stmt = $conn->prepare("SELECT club_id, club_name, coach, location FROM club order by club_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
