@@ -16,7 +16,7 @@ function selectClubs() {
 function selectClubsForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT club_id, club_name, coach, location FROM club order by club_name");
+        $stmt = $conn->prepare("SELECT country_id, country_name FROM country order by country_name");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
