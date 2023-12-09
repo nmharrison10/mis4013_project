@@ -1,6 +1,7 @@
 <div class="row">
   <div class="col">
     <h1>Countries</h1>
+     <h5><a href="view-chart.php">FIFA WC Stats</a></h5>
   </div>
   <div class="col-auto">
 <?php
