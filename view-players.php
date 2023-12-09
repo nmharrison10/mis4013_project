@@ -12,8 +12,8 @@ include "view-players-newform.php";
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <tr>
-       <th>Player's ID</th>
+      <tr class="table-primary">
+       <th scope="row">Player's ID</th>
       <th>Player's Name</th>
       <th>Player's Age</th>
       <th></th> 
@@ -25,7 +25,7 @@ include "view-players-newform.php";
   <?php
   while ($player = $players -> fetch_assoc()) {
     ?>
-    <tr>
+    <tr class="table-primary">
       <td><?php echo $player['player_id'];?></td>
       <td><?php echo $player['player_name'];?></td>
       <td><?php echo $player['player_age'];?></td>
