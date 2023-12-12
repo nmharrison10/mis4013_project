@@ -33,6 +33,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['location']?></td>
   <td>
     <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:50px;width:50px;"></div>
+  </td>
 <script>
   "use strict";
   {
@@ -46,7 +47,6 @@ L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
     
   }
 </script>
-  </td>
   <td>
 <?php
 include "view-stadiums-editform.php";
