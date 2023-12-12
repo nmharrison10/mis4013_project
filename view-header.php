@@ -37,14 +37,15 @@
         <li class="nav-item">
           <a class="nav-link" href="goals.php" data-ol-has-click-handler="">Goals</a>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="stadiums.php" data-ol-has-click-handler="">Stadiums</a>
+         </li>
         
          <li class="nav-item">
           <a class="nav-link" href="games.php" data-ol-has-click-handler="">Games</a>
          </li>
         
-        <li class="nav-item">
-          <a class="nav-link" href="stadiums1.php" data-ol-has-click-handler="">Stadiums</a>
-        </li>
           
         <li class="nav-item">
           <a class="nav-link" href="about-the-players.php" data-ol-has-click-handler="">Favorite Players</a>
