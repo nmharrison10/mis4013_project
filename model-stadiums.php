@@ -17,7 +17,7 @@ function insertStadium($sName, $sLong, $sLat, $sLoc) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("INSERT INTO `stadium` ( `stadium_name`, `stadium_long`, `stadium_lat`, `location`) VALUES (?, ?, ?, ?)");
-        $stmt->bind_param("sss", $sName, $sLong, $sLat, $sLoc);
+        $stmt->bind_param("ssss", $sName, $sLong, $sLat, $sLoc);
         $success=$stmt->execute();
         $conn->close();
         return $success;
@@ -31,7 +31,7 @@ function updateStadium($sid, $sName, $sLat, $sLong, $sLoc) {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("UPDATE `stadium` set `stadium_name` = ?, `stadium_long` = ?, `stadium_lat` = ?, `location` = ? where stadium_id = ?");
-        $stmt->bind_param("sssi", $sName, $sLong, $sLat, $sLoc, $sid);
+        $stmt->bind_param("ssssi", $sName, $sLong, $sLat, $sLoc, $sid);
         $success=$stmt->execute();
         $conn->close();
         return $success;
