@@ -3,10 +3,6 @@
 <h1>Stadiums</h1>
   </div>
   <div class="col-auto">
-<!--<?php
-include "view-stadiums-newform.php";
-?>
--->
   </div>
 </div>
 <div class="table-responsive">
@@ -33,10 +29,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
   <td><?php echo $stadium['location']?></td>
   <td>
- <!--   <?php
-    include "view-stadiums-editform.php";
-    ?>
-  -->
+    
   </td>
   <td>
     <form method="post" action="">
