@@ -32,7 +32,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
   <td><?php echo $stadium['location']?></td>
   <td>
-    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:200px;width:200px;"></div>
+    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:50px;width:50px;"></div>
 <script>
   "use strict";
   {
