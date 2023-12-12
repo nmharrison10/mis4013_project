@@ -43,7 +43,7 @@
          </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="stadiums.php" data-ol-has-click-handler="">Stadiums</a>
+          <a class="nav-link" href="stadiums1.php" data-ol-has-click-handler="">Stadiums</a>
         </li>
           
         <li class="nav-item">
