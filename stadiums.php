@@ -35,7 +35,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
 }
 
 
-$stadium = selectStadiums();
+$stadiums = selectStadiums();
 include "view-stadiums.php";
 include "view-footer.php";
 ?>
