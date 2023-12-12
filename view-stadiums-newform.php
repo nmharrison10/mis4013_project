@@ -29,6 +29,10 @@
             <label for="sLong" class="form-label">Stadium Longitude</label>
             <input type="text" class="form-control" id="sLong" name="sLong">
           </div>
+          <div class="mb-3">
+            <label for="sLoc" class="form-label">Stadium Location/label>
+            <input type="text" class="form-control" id="sLoc" name="sLoc">
+          </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
             </form>
