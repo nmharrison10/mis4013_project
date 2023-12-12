@@ -16,7 +16,7 @@ include "view-stadiums-newform.php";
       <th>Name</th>
       <th>Longitude</th>
       <th>Latitude</th>
-      <th>Map</th>
+      <th>Location</th>
       <th></th>
       <th></th>
       </tr>
@@ -30,8 +30,7 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_name']?></td>
   <td><?php echo $stadium['stadium_lat']?></td>
   <td><?php echo $stadium['stadium_long']?></td>
-  <td>
-  </td>
+  <td><?php echo $stadium['location']?></td>
   <td>
     <?php
     include "view-stadiums-editform.php";
