@@ -1,31 +1,31 @@
 <?php
 require_once("util-db.php");
-require_once("model-games.php");
+require_once("model-stadiums.php");
 
-$pageTitle = "Games";
+$pageTitle = "Stadiums";
 include "view-header.php";
 
 if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
-    if(insertGame($_POST['t1id'], $_POST['t1s'],$_POST['t2id'],$_POST['t2s'],$_POST['sid'],$_POST['date'])) {
-  echo '<div style="margin:15px" class="alert alert-success" role="alert">Game Added</div>';
+    if(insertStadium($_POST['sName'],$_POST['sLong'],$_POST['sLat'],$_POST['sLoc'])) {
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Stadium Added</div>';
     }
     else{
 echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Delete":
-    if(deleteGame($_POST['gid'])) {
-  echo '<div style="margin:15px" class="alert alert-success" role="alert">Game Deleted</div>';
+    if(deleteStadium($_POST['sid'])) {
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Stadium Deleted</div>';
     }
     else{
 echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Edit":
-    if(updateGame($_POST['t1id'], $_POST['t1s'],$_POST['t2id'],$_POST['t2s'],$_POST['sid'],$_POST['date'],$_POST['gid'] )) {
-  echo '<div style="margin:15px" class="alert alert-success" role="alert">Game Edited</div>';
+    if(updateStadium($_POST['sid'], $_POST['sName'],$_POST['sLat'],$_POST['sLong'],$_POST['sLoc'])) {
+  echo '<div style="margin:15px" class="alert alert-success" role="alert">Stadium Edited</div>';
     }
     else{
 echo '<div class="alert alert-danger" role="alert">Error</div>"';
@@ -35,7 +35,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
 }
 
 
-$games = selectGames();
-include "view-games.php";
+$stadium = selectStadiums();
+include "view-stadiums.php";
 include "view-footer.php";
 ?>
