@@ -24,7 +24,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Edit":
-    if(updateStadium($_POST['sName'], $_POST['sLat'], $_POST['sLong'], $_POST['sid'])) {
+    if(updateStadium($_POST['sid'], $_POST['sName'], $_POST['sLat'], $_POST['sLong'], $_POST['sLoc'])) {
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Stadium Edited</div>';
     }
     else{
