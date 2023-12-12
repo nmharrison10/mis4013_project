@@ -1,6 +1,6 @@
 <?php
 require_once("util-db.php");
-require_once("model-stadiums1.php");
+require_once("model-stadiums.php");
 
 $pageTitle = "Stadiums";
 include "view-header.php";
