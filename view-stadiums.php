@@ -32,6 +32,22 @@ while ($stadium = $stadiums->fetch_assoc()) {
   <td><?php echo $stadium['stadium_long']?></td>
   <td><?php echo $stadium['location']?></td>
   <td>
+    <div id="mapdiv<?php echo $stadium['stadium_id']?>" style="height:200px;width:200px;"></div>
+<script>
+  "use strict";
+  {
+var map<?php echo $stadium['stadium_id']?> = L.map( "mapdiv<?php echo $stadium['stadium_id']?>", { attributionControl: false, zoomControl:false, 
+  } ).setView( [ <?php echo $stadium['stadium_lat']?>, <?php echo $stadium['stadium_long']?>], 15 );
+
+L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}',{
+    maxZoom: 20,
+    subdomains:['mt0','mt1','mt2','mt3']
+}).addTo( map<?php echo $stadium['stadium_id']?> );
+    
+  }
+</script>
+  </td>
+  <td>
 <?php
 include "view-stadiums-editform.php";
 ?>
