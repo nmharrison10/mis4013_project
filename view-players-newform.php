@@ -34,7 +34,7 @@
 <?php
     $clubList = selectClubsForInput();
     $selectedClubname = "";
-    include "view-player-input-list.php";
+    include "view-club-input-list.php";
 ?>
           
             </div>
