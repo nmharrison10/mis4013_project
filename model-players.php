@@ -2,7 +2,7 @@
 function selectPlayers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT p.player_id, p.player_name, p.player_number, p.player_age, p.club_id, c.club_name FROM `player` p JOIN club c ON p.club_id = c.club_id WHERE p.club_id = ?");
+        $stmt = $conn->prepare("SELECT p.player_id, p.player_name, p.player_number, p.player_age, p.club_id, c.club_name FROM `player` p JOIN club c ON p.club_id = c.club_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -13,25 +13,25 @@ function selectPlayers() {
     }
 }
 
-//function selectPlayersForInput() {
-   // try {
-     //   $conn = get_db_connection();
-       // $stmt = $conn->prepare("SELECT club_id, club_name, coach, location FROM club order by club_name");
-        //$stmt->execute();
- //       $result = $stmt->get_result();
-  //      $conn->close();
- //       return $result;
-//    } catch (Exception $e) {
-//        $conn->close();
-  //      throw $e;
- //   }
-//}
+function selectClubsForInput() {
+try {
+$conn = get_db_connection();
+$stmt = $conn->prepare("SELECT club_id, club_name, coach, location FROM club order by club_name");
+$stmt->execute();
+$result = $stmt->get_result();
+$conn->close();
+ return $result;
+ } catch (Exception $e) {
+$conn->close();
+throw $e;
+ }
+}
 
-function insertPlayers($pName,$pNumber,$pAge) {
+function insertPlayers($pName,$pNumber,$pAge, $cid, $countryid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("INSERT INTO `player` (`player_name`, `player_number`, `player_age`) VALUES (?, ?, ?)");
-        $stmt->bind_param("sss",$pName,$pNumber,$pAge);
+        $stmt = $conn->prepare("INSERT INTO `player` (`player_name`, `player_number`, `player_age`, `club_id`, `country_id`) VALUES (?, ?, ?, ?, ?)");
+        $stmt->bind_param("siiii",$pName,$pNumber,$pAge, $cid, $countryid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -41,11 +41,11 @@ function insertPlayers($pName,$pNumber,$pAge) {
         throw $e;
     }
 }
-function updatePlayers($pName,$pNumber,$pAge,$pid) {
+function updatePlayers($pName,$pNumber,$pAge, $cid, $countryid, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `player` set `player_name`=?, `player_number`= ?, `player_age`= ? where player_id=?");
-        $stmt->bind_param("sssi", $pName,$pNumber,$pAge,$pid);
+        $stmt = $conn->prepare("update `player` set `player_name`=?, `player_number`= ?, `player_age`= ?, `club_id`= ?, `country_id`= ? where player_id=?");
+        $stmt->bind_param("siiiii", $pName,$pNumber,$pAge,$cid,$countryid,$pid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
