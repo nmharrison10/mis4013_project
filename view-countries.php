@@ -48,13 +48,14 @@ include "view-countries-editform.php";
   </td>
    <td>
         <form method = "post" action="clubs-by-country.php">
-      <input type="hidden" name= "cid" value ="<?php echo $country['club_id'];?>">
+      <input type="hidden" name= "cid" value ="<?php echo $country['club_id'];?>"
       <button type="submit" class="btn btn-primary">Clubs</button>
     </form>
       </td>
 </tr>
 <?php
 }
+?>
     </body>
   </table>
 </div>
