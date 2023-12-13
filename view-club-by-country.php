@@ -11,6 +11,7 @@
       <tbody>
   <?php
   while ($club = $clubs->fetch_assoc())
+  {
     ?>
     <tr>
       <td><?php echo $club['club_id'];?></td>
