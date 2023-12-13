@@ -18,6 +18,7 @@ include "view-countries-newform.php";
       <th>Capital</th>
       <th></th>
       <th></th>
+      <th></th>
       </tr>
     </head>
     <body>
@@ -45,6 +46,12 @@ include "view-countries-editform.php";
       </button>
     </form>
   </td>
+   <td>
+        <form method = "post" action="clubs-by-country.php">
+      <input type="hidden" name= "cid" value ="<?php echo $club['club_id'];?>">
+      <button type="submit" class="btn btn-primary">Clubs</button>
+    </form>
+      </td>
 </tr>
 <?php
 }

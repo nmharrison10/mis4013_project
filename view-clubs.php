@@ -12,8 +12,9 @@ include "view-clubs-newform.php";
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <tr class="table-primary">
-       <th>Club ID</th>
+      <tr>
+      <th>Country</th>
+      <th>Club ID</th>
       <th>Club Name</th>
       <th>Coach's Name</th>
       <th>Club's Location</th> 
@@ -22,7 +23,7 @@ include "view-clubs-newform.php";
       <th></th> 
       </tr>
       </thead>
-      <tbody>
+      <tbody>  
   <?php
   while ($club = $clubs->fetch_assoc()) {
     ?>
@@ -48,6 +49,12 @@ include "view-clubs-newform.php";
        </button>
         </form>
     </td>
+      <td>
+        <form method = "post" action="player-by-club.php">
+      <input type="hidden" name= "clid" value ="<?php echo $player['player_id'];?>">
+      <button type="submit" class="btn btn-primary">Roster</button>
+    </form>
+      </td>
     </tr>
     <?php
   }

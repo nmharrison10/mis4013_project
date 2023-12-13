@@ -16,7 +16,7 @@ function selectGames() {
 function selectGamesForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT country_id, country_name FROM country order by country_name");
+        $stmt = $conn->prepare("SELECT game_id, team1_id, club1.club_name as team1_name, team2_id, club2.club_name as team2_name, stadium_id, date FROM `game` join `club` club1 on game.team1_id=club1.club_id join `club` club2 on game.team2_id=club2.club_id;");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();

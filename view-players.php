@@ -12,9 +12,11 @@ include "view-players-newform.php";
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <tr class="table-primary">
-       <th>Player's ID</th>
+      <tr>
+      <th>Club Name</th
+      <th>Player's ID</th>
       <th >Player's Name</th>
+      <th>Player's Number</th>
       <th>Player's Age</th>
       <th></th> 
       <th></th> 
@@ -22,12 +24,24 @@ include "view-players-newform.php";
       </tr>
     </thead>
       <tbody>
+
+ <?php
+  while ($club = $clubs->fetch_assoc()) {
+    ?>
+    <tr>
+      <td><?php echo $club['club_name'];?></td>
+    </tr>
+  <?php
+  }
+  ?>
+        
   <?php
   while ($player = $players -> fetch_assoc()) {
     ?>
     <tr class="table-primary">
       <td><?php echo $player['player_id'];?></td>
       <td><?php echo $player['player_name'];?></td>
+      <td><?php echo $player['player_number'];?></td>
       <td><?php echo $player['player_age'];?></td>
       <td>
     <?php
