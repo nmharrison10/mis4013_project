@@ -28,6 +28,14 @@
               <label for="pAge<?php echo $player['player_id']; ?>" class="form-label">Player's Age</label>
               <input type="text" class="form-control" id="pAge<?php echo $player['player_id']; ?>" name = "pAge" value = "<?php echo $player['player_age']; ?> ">
             </div>
+          <div class="mb-3">
+              <label for="cid<?php echo $player['player_id']; ?>" class="form-label">Player's Club</label>
+              <input type="text" class="form-control" id="cid<?php echo $player['player_id']; ?>" name = "cid" value = "<?php echo $player['club_id']; ?> ">
+            </div>
+          <div class="mb-3">
+              <label for="pAge<?php echo $player['player_id']; ?>" class="form-label">Player's Country</label>
+              <input type="text" class="form-control" id="pAge<?php echo $player['player_id']; ?>" name = "countryid" value = "<?php echo $player['country_id']; ?> ">
+            </div>
                 <input type="hidden" name = "pid" value = "<?php echo $player['player_id']; ?> ">
                 <input type = "hidden" name = "actionType" value = "Edit"> 
             <button type="submit" class="btn btn-primary">Save</button>
