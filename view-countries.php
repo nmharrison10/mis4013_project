@@ -4,23 +4,6 @@
      <h5><a href="view-chart.php">FIFA WC Stats</a></h5>
   </div>
   <div class="col-auto">
-    <!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  background-image: url('stadiumbcg.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-</style>
-</head>
-<body>
-  <h1 style = "color:white;">MIS4013 Project</h1>
-</body>
-</html>
-
 <?php
 include "view-countries-newform.php";
 ?>
