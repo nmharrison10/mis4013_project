@@ -12,7 +12,7 @@ include "view-clubs-newform.php";
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <tr class="table-primary">
+      <tr>
        <th>Club ID</th>
       <th>Club Name</th>
       <th>Coach's Name</th>
