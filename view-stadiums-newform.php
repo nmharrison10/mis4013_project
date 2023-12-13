@@ -21,18 +21,21 @@
             <label for="sName" class="form-label">Stadium Name</label>
             <input type="text" class="form-control" id="sName" name="sName">
           </div>
+           <div class="mb-3">
+            <label for="sLoc" class="form-label">Location</label>
+            <input type="text" class="form-control" id="sLoc" name="sLoc">
+          </div>
           <div class="mb-3">
-            <label for="sLat" class="form-label">Stadium Latitude</label>
+            <label for="sLat" class="form-label">Latitude</label>
             <input type="text" class="form-control" id="sLat" name="sLat">
           </div>
           <div class="mb-3">
-            <label for="sLong" class="form-label">Stadium Longitude</label>
+            <label for="sLong" class="form-label">Longitude</label>
             <input type="text" class="form-control" id="sLong" name="sLong">
           </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
             </form>
-        
       </div>
     </div>
   </div>
