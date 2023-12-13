@@ -20,6 +20,10 @@
               <label for="pName<?php echo $player['player_id']; ?>" class="form-label">Player's Name</label>
               <input type="text" class="form-control" id="pName<?php echo $player['player_id']; ?>" name = "pName" value = "<?php echo $player['player_name']; ?> ">
             </div>
+          <div class="mb-3">
+              <label for="pNumber<?php echo $player['player_id']; ?>" class="form-label">Player's Number</label>
+              <input type="text" class="form-control" id="pNumber<?php echo $player['player_id']; ?>" name = "pNumber" value = "<?php echo $player['player_number']; ?> ">
+            </div>
             <div class="mb-3">
               <label for="pAge<?php echo $player['player_id']; ?>" class="form-label">Player's Age</label>
               <input type="text" class="form-control" id="pAge<?php echo $player['player_id']; ?>" name = "pAge" value = "<?php echo $player['player_age']; ?> ">
