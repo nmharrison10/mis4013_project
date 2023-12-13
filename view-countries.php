@@ -55,7 +55,6 @@ include "view-countries-editform.php";
 </tr>
 <?php
 }
-?>
     </body>
   </table>
 </div>
