@@ -18,6 +18,7 @@
       <td><?php echo $club['club_name'];?></td>
       <td><?php echo $club['coach'];?></td>
       <td><?php echo $club['location'];?></td>
+      <td><?php echo $club['country_name'];?></td>
     </tr>
     <?php
   }
