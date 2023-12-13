@@ -13,10 +13,10 @@ include "view-players-newform.php";
   <table class="table">
     <thead>
       <tr>
-        <th>Club Name</th>
-       <th>Player's ID</th>
+      <th>Club Name</th>
+      <th>Player's ID</th>
       <th >Player's Name</th>
-        <th>Player Number</th>
+      <th>Player's Number</th>
       <th>Player's Age</th>
       <th></th> 
       <th></th> 
