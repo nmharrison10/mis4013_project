@@ -30,6 +30,9 @@ include "view-clubs-newform.php";
     <tr>
       <td><?php echo $country['country_name'];?></td>
     </tr>
+     <?php
+  }
+  ?>
         
   <?php
   while ($club = $clubs->fetch_assoc()) {
