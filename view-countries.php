@@ -9,7 +9,7 @@
 <head>
 <style>
 body {
-  background-image: url('BCG.png');
+  background-image: url('stadiumbcg.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: cover;
