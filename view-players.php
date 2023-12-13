@@ -12,7 +12,7 @@ include "view-players-newform.php";
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <tr class="table-primary">
+      <tr>
        <th>Player's ID</th>
       <th >Player's Name</th>
       <th>Player's Age</th>
