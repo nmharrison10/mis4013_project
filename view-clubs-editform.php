@@ -17,18 +17,18 @@
       <div class="modal-body">
         <form method = "post" action="">
             <div class="mb-3">
-              <label for="cName<?php echo $club['club_id']; ?>" class="form-label">Name</label>
-              <input type="text" class="form-control" id="cName<?php echo $club['club_id']; ?>" name = "cName" value = "<?php echo $club['club_name']; ?> ">
+              <label for="clName<?php echo $club['club_id']; ?>" class="form-label">Name</label>
+              <input type="text" class="form-control" id="clName<?php echo $club['club_id']; ?>" name = "clName" value = "<?php echo $club['club_name']; ?> ">
             </div>
             <div class="mb-3">
-              <label for="cCoach<?php echo $club['club_id']; ?>" class="form-label">Coach's name</label>
-              <input type="text" class="form-control" id="cCoach<?php echo $club['club_id']; ?>" name = "cCoach" value = "<?php echo $club['coach']; ?> ">
+              <label for="clCoach<?php echo $club['club_id']; ?>" class="form-label">Coach's name</label>
+              <input type="text" class="form-control" id="clCoach<?php echo $club['club_id']; ?>" name = "clCoach" value = "<?php echo $club['coach']; ?> ">
             </div>
             <div class="mb-3">
-                <label for="cLocation<?php echo $club['club_id']; ?>" class="form-label">Club's Location</label>
-                <input type="text" class="form-control" id="cLocation<?php echo $club['club_id']; ?>" name = "cLocation" value = "<?php echo $club['location']; ?> ">
+                <label for="clLocation<?php echo $club['club_id']; ?>" class="form-label">Club's Location</label>
+                <input type="text" class="form-control" id="clLocation<?php echo $club['club_id']; ?>" name = "clLocation" value = "<?php echo $club['location']; ?> ">
               </div>
-                <input type="hidden" name = "cid" value = "<?php echo $club['club_id']; ?> ">
+                <input type="hidden" name = "clid" value = "<?php echo $club['club_id']; ?> ">
                 <input type = "hidden" name = "actionType" value = "Edit"> 
             <button type="submit" class="btn btn-primary">Save</button>
           </form>

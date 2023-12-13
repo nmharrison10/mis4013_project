@@ -12,11 +12,11 @@ include "view-clubs-newform.php";
 <div class="table-responsive">
   <table class="table">
     <thead>
-      <tr>
+      <tr class="table-primary">
        <th>Club ID</th>
       <th>Club Name</th>
       <th>Coach's Name</th>
-      <th>Club's Name</th> 
+      <th>Club's Location</th> 
       <th></th> 
       <th></th> 
       <th></th> 
@@ -39,7 +39,7 @@ include "view-clubs-newform.php";
       </td>
       <td>
         <form method = "post" action="">
-      <input type="hidden" name= "cid" value ="<?php echo $club['club_id'];?>">
+      <input type="hidden" name= "clid" value ="<?php echo $club['club_id'];?>">
     <input type="hidden" name ="actionType" value = "Delete">
       <button type="submit" class="btn btn-primary" onclick="return confirm('Are you sure?');"> 
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">

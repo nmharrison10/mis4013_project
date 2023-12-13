@@ -16,17 +16,25 @@
       </div>
       <div class="modal-body">
         <form method = "post" action="">
-            <div class="mb-3">
-              <label for="cName" class="form-label">Name</label>
-             <input type="text" class="form-control" id="cName" name = "cName">
-        </div>
-            <div class="mb-3">
-              <label for="cCoach" class="form-label">Coach's name</label>
-              <input type="text" class="form-control" id="cCoach" name = "cCoach">
+          <div class="mb-3">
+              <label for="cid" class="form-label">Country</label>
+    <?php
+    $countryList = selectCountriesForInput();
+    $selectedCountryname = 0;
+    include "view-club-input-list.php";
+    ?>
             </div>
             <div class="mb-3">
-              <label for="cLocation" class="form-label">Club's Location</label>
-              <input type="text" class="form-control" id="cLocation" name = "cLocation">
+              <label for="clName" class="form-label"> CLub's Name</label>
+             <input type="text" class="form-control" id="clName" name = "clName">
+        </div>
+            <div class="mb-3">
+              <label for="clCoach" class="form-label">Coach's name</label>
+              <input type="text" class="form-control" id="clCoach" name = "clCoach">
+            </div>
+            <div class="mb-3">
+              <label for="clLocation" class="form-label">Club's Location</label>
+              <input type="text" class="form-control" id="clLocation" name = "clLocation">
             </div>
                 <input type = "hidden" name = "actionType" value = "Add"> 
             <button type="submit" class="btn btn-primary">Save</button>

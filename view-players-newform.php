@@ -16,6 +16,14 @@
       </div>
       <div class="modal-body">
         <form method = "post" action="">
+          <div class="mb-3">
+              <label for="clid" class="form-label">Club</label>
+    <?php
+    $clubList = selectClubsForInput();
+    $selectedClubname = 0;
+    include "view-player-input-list.php";
+    ?>
+            </div>
             <div class="mb-3">
               <label for="pName" class="form-label">Player's Name</label>
               <input type="text" class="form-control" id="pName" name = "pName">

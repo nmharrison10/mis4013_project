@@ -1,7 +1,6 @@
 <div class="row">
   <div class="col">
     <h1>Goals</h1>
-    <h5><a href="view-chart.php">FIFA WC Goals</a></h5>
   </div>
   <div class="col-auto">
 <?php
@@ -14,7 +13,7 @@ include "view-goals-newform.php";
     <head>
       <tr>
       <th>ID</th>
-      <th>Scorer ID</th>
+      <th>Player ID</th>
       <th>Assister ID</th>
       <th>Game ID</th>
       <th></th>
