@@ -51,7 +51,7 @@ include "view-clubs-newform.php";
     </td>
       <td>
         <form method = "post" action="player-by-club.php">
-      <input type="hidden" name= "clid" value ="<?php echo $club['player_id'];?>">
+      <input type="hidden" name= "clid" value ="<?php echo $player['player_id'];?>">
       <button type="submit" class="btn btn-primary">Roster</button>
     </form>
       </td>
