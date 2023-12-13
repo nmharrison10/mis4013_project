@@ -11,31 +11,39 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="editPlayerModal<?php echo $player['player_id']; ?>">Edit Player Name</h1>
+        <h1 class="modal-title fs-5" id="editPlayerModal<?php echo $player['player_id']; ?>">Edit Player</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <form method = "post" action="">
             <div class="mb-3">
               <label for="pName<?php echo $player['player_id']; ?>" class="form-label">Player's Name</label>
-              <input type="text" class="form-control" id="pName<?php echo $player['player_id']; ?>" name = "pName" value = "<?php echo $player['player_name']; ?> ">
+              <input type="text" class="form-control" id="pName<?php echo $player['player_id']; ?>" name = "pName" value = "<?php echo $player['player_name'];?>">
             </div>
           <div class="mb-3">
               <label for="pNumber<?php echo $player['player_id']; ?>" class="form-label">Player's Number</label>
               <input type="text" class="form-control" id="pNumber<?php echo $player['player_id']; ?>" name = "pNumber" value = "<?php echo $player['player_number']; ?> ">
             </div>
+          
             <div class="mb-3">
               <label for="pAge<?php echo $player['player_id']; ?>" class="form-label">Player's Age</label>
               <input type="text" class="form-control" id="pAge<?php echo $player['player_id']; ?>" name = "pAge" value = "<?php echo $player['player_age']; ?> ">
             </div>
+          
           <div class="mb-3">
               <label for="cid<?php echo $player['player_id']; ?>" class="form-label">Player's Club</label>
-
+<?php
+    $clubList = selectClubsForInput();
+    $selectedClubname = $player['club_id'];
+    include "view-club-input-list.php";
+?>
             </div>
+          
           <div class="mb-3">
               <label for="pAge<?php echo $player['player_id']; ?>" class="form-label">Player's Country</label>
               <input type="text" class="form-control" id="pAge<?php echo $player['player_id']; ?>" name = "countryid" value = "<?php echo $player['country_id']; ?> ">
             </div>
+          
                 <input type="hidden" name = "pid" value = "<?php echo $player['player_id']; ?> ">
                 <input type = "hidden" name = "actionType" value = "Edit"> 
             <button type="submit" class="btn btn-primary">Save</button>
