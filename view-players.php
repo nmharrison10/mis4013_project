@@ -30,6 +30,9 @@ include "view-players-newform.php";
     <tr>
       <td><?php echo $club['club_name'];?></td>
     </tr>
+  <?php
+  }
+  ?>
         
   <?php
   while ($player = $players -> fetch_assoc()) {
