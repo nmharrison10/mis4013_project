@@ -30,7 +30,7 @@
           </div>
          <div class="mb-3">
             <label for="sLong<?php echo $stadium['stadium_id'];?>" class="form-label">Longitude</label>
-            <input type="text" class="form-control" id="sLong<?php echo $stadium['stadium_id'];?>" name="sLoc" value="<?php echo $stadium['stadium_long'];?>">
+            <input type="text" class="form-control" id="sLong<?php echo $stadium['stadium_id'];?>" name="sLong" value="<?php echo $stadium['stadium_long'];?>">
           </div>
               <input type="hidden" name="sid" value="<?php echo $stadium['stadium_id'];?>">
           <input type="hidden" name="actionType" value="Edit">
