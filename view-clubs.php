@@ -13,7 +13,8 @@ include "view-clubs-newform.php";
   <table class="table">
     <thead>
       <tr>
-       <th>Club ID</th>
+      <th>Country</th>
+      <th>Club ID</th>
       <th>Club Name</th>
       <th>Coach's Name</th>
       <th>Club's Location</th> 
@@ -23,6 +24,13 @@ include "view-clubs-newform.php";
       </tr>
       </thead>
       <tbody>
+  <?php
+  while ($country = $countries->fetch_assoc()) {
+    ?>
+    <tr>
+      <td><?php echo $country['country_name'];?></td>
+    </tr>
+        
   <?php
   while ($club = $clubs->fetch_assoc()) {
     ?>
