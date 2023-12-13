@@ -2,7 +2,7 @@
 function selectPlayers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT player_id,player_name,player_number,player_age FROM `player`");
+        $stmt = $conn->prepare("SELECT player_id, player_name, player_number, player_age FROM `player`");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -13,19 +13,19 @@ function selectPlayers() {
     }
 }
 
-function selectPlayersForInput() {
-    try {
-        $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT club_id, club_name, coach, location FROM club order by club_name");
-        $stmt->execute();
-        $result = $stmt->get_result();
-        $conn->close();
-        return $result;
-    } catch (Exception $e) {
-        $conn->close();
-        throw $e;
-    }
-}
+//function selectPlayersForInput() {
+   // try {
+     //   $conn = get_db_connection();
+       // $stmt = $conn->prepare("SELECT club_id, club_name, coach, location FROM club order by club_name");
+        //$stmt->execute();
+ //       $result = $stmt->get_result();
+  //      $conn->close();
+ //       return $result;
+//    } catch (Exception $e) {
+//        $conn->close();
+  //      throw $e;
+ //   }
+//}
 
 function insertPlayers($pName,$pNumber,$pAge) {
     try {
