@@ -13,7 +13,6 @@ include "view-players-newform.php";
   <table class="table">
     <thead>
       <tr>
-      <th>Club ID</th> 
       <th>Club Name</th
       <th>Player's ID</th>
       <th >Player's Name</th>
@@ -30,7 +29,6 @@ include "view-players-newform.php";
   while ($club = $clubs->fetch_assoc()) {
     ?>
     <tr>
-      <td><?php echo $club['club_id'];?></td>
       <td><?php echo $club['club_name'];?></td>
     </tr>
   <?php
