@@ -40,8 +40,8 @@
             </div>
           
           <div class="mb-3">
-              <label for="pAge<?php echo $player['player_id']; ?>" class="form-label">Player's Country</label>
-              <input type="text" class="form-control" id="pAge<?php echo $player['player_id']; ?>" name = "countryid" value = "<?php echo $player['country_id']; ?> ">
+              <label for="countryid<?php echo $player['player_id']; ?>" class="form-label">Player's Country</label>
+              <input type="text" class="form-control" id="countryid<?php echo $player['player_id']; ?>" name = "countryid" value = "<?php echo $player['country_id']; ?> ">
             </div>
           
                 <input type="hidden" name = "pid" value = "<?php echo $player['player_id']; ?> ">
