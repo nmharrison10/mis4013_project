@@ -48,6 +48,12 @@ include "view-clubs-newform.php";
        </button>
         </form>
     </td>
+      <td>
+        <form method = "post" action="player-by-club.php">
+      <input type="hidden" name= "clid" value ="<?php echo $club['player_id'];?>">
+      <button type="submit" class="btn btn-primary">Roster</button>
+    </form>
+      </td>
     </tr>
     <?php
   }
