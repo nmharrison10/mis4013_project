@@ -20,9 +20,9 @@
             <label for="t1id<?php echo $game['game_id'];?>" class="form-label">Team 1</label>
 <?php
     $clubList = selectClubsForInput();
-    $selectedClubname = $game['team1_id'];?>;
+    $selectedClubname = $game['team1_id'];
     include "view-club1-input-list.php";
-?> </div>
+?></div>
         <div class="mb-3">
             <label for="t1s<?php echo $game['game_id'];?>" class="form-label">Team 1 Score</label>
             <input type="text" class="form-control" id="t1s<?php echo $game['game_id'];?>" name="t1s" value="<?php echo $game['team1_score'];?>">
@@ -31,9 +31,9 @@
             <label for="t2id<?php echo $game['game_id'];?>" class="form-label">Team 2</label>
 <?php
     $clubList = selectClubsForInput();
-    $selectedClubname = $game['team2_id'];?>;
+    $selectedClubname = $game['team2_id'];
     include "view-club2-input-list.php";
-?> </div>
+?></div>
                <div class="mb-3">
             <label for="t2s<?php echo $game['game_id'];?>" class="form-label">Team 2 Score</label>
             <input type="text" class="form-control" id="t2s<?php echo $game['game_id'];?>" name="t2s" value="<?php echo $game['team2_score'];?>">
