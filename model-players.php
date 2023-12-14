@@ -44,8 +44,8 @@ function insertPlayers($pName,$pNumber,$pAge, $cid, $countryid) {
 function updatePlayers($pName,$pNumber,$pAge, $cid, $countryid, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `player` set `player_name`=?, `player_number`= ?, `player_age`= ?, `club_id`= ?, `country_id`= ? where player_id=?");
-        $stmt->bind_param("siiiii", $pName,$pNumber,$pAge,$cid,$countryid,$pid);
+        $stmt = $conn->prepare("UPDATE `player` SET `country_id` = ?, `player_name` = ?, `player_age` = ?, `player_number` = ?, `club_id` = ? WHERE `player`.`player_id` = ?");
+        $stmt->bind_param("isiiii", $countryid, $pName, $pAge, $pNumber, $cid, $pid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
