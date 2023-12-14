@@ -13,12 +13,10 @@ include "view-clubs-newform.php";
   <table class="table">
     <thead>
       <tr>
-      <th>Country</th>
       <th>Club ID</th>
       <th>Club Name</th>
       <th>Coach's Name</th>
       <th>Club's Location</th> 
-      <th></th> 
       <th></th> 
       <th></th> 
       </tr>
