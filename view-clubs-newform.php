@@ -17,15 +17,15 @@
       <div class="modal-body">
         <form method = "post" action="">
           <div class="mb-3">
-              <label for="cid" class="form-label">Country</label>
+              <label for="clid" class="form-label">Country</label>
     <?php
-    $clubList = selectClubsForInput();
-    $selectedClubname = 0;
+    $countryList = selectCountriesForInput();
+    $selectedCountryname = 0;
     include "view-club-input-list.php";
     ?>
             </div>
             <div class="mb-3">
-              <label for="clName" class="form-label"> CLub's Name</label>
+              <label for="clName" class="form-label"> Club's Name</label>
              <input type="text" class="form-control" id="clName" name = "clName">
         </div>
             <div class="mb-3">

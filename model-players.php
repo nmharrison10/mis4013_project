@@ -2,7 +2,7 @@
 function selectPlayers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT p.player_id, p.player_name, p.player_number, p.player_age, p.club_id, c.club_id, c.club_name, country.country_id FROM `player` p JOIN club c ON p.club_id = c.club_id
+        $stmt = $conn->prepare("SELECT p.player_id, p.player_name, p.player_number, p.player_age, p.club_id, c.club_id, c.club_name, country.country_id, country.country_name FROM `player` p JOIN club c ON p.club_id = c.club_id
         JOIN country ON country.country_id=p.country_id");
         $stmt->execute();
         $result = $stmt->get_result();

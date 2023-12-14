@@ -46,7 +46,6 @@
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
             </form>
-        
       </div>
     </div>
   </div>
