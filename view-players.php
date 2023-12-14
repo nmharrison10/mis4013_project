@@ -27,7 +27,7 @@ include "view-players-newform.php";
   <?php
   while ($player = $players -> fetch_assoc()) {
     ?>
-    <tr class="table-primary">
+    <tr>
       <td><?php echo $player['player_id'];?></td>
       <td><?php echo $player['player_name'];?></td>
       <td><?php echo $player['player_number'];?></td>
