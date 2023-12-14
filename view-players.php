@@ -18,6 +18,7 @@ include "view-players-newform.php";
       <th>Player's Number</th>
       <th>Player's Age</th>
       <th>Club Name</th>
+      <th>Nationality</th>
       <th></th> 
       <th></th>
       </tr>
@@ -31,7 +32,8 @@ include "view-players-newform.php";
       <td><?php echo $player['player_name'];?></td>
       <td><?php echo $player['player_number'];?></td>
       <td><?php echo $player['player_age'];?></td>
-       <td><?php echo $player['club_name'];?></td>
+       td><?php echo $player['club_name'];?></td>
+      <td><?php echo $player['country_name'];?></td>
       <td>
     <?php
           include "view-players-editform.php";
