@@ -1,13 +1,13 @@
-<select class="form-select" id="clid" name="clid">
+<select class="form-select" id="cid" name="cid">
   <?php
-    while ($countrynameItem =$countryList->fetch_assoc()){
+    while ($clubnameItem =$clubList->fetch_assoc()){
       $selText = "";
-      if ($selectedCountryname == $countrynameItem['country_id']){
-        $selText = " selected";
+      if ($selectedClubname == $clubnameItem['club_id']){
+        $selText = "selected";
 
       }
       ?>
-      <option value="<?php echo $countrynameItem['country_id'];?>"<?=$selText?>><?php echo $countrynameItem['country_name'];?></option>
+      <option value="<?php echo $clubnameItem['club_id'];?>"<?=$selText?>><?php echo $clubnameItem['club_name'];?></option>
   <?php
     }
     ?>
