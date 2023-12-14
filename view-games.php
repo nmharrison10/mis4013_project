@@ -26,7 +26,7 @@ include "view-games-newform.php";
 <?php
 while ($game = $games->fetch_assoc()) {
 ?>
-<tr class="table-primary">
+<tr>
   <td><?php echo $game['game_id']; ?></td>
   <td><?php echo $game['team1_name']; ?></td>
   <td><?php echo $game['team1_score']; ?></td>
