@@ -18,7 +18,7 @@
             <form method="post" action="">
           <div class="mb-3">
             <label for="pName<?php echo $player['player_id'];?>" class="form-label">Player Name</label>
-            <input type="text" class="form-control" id="pName" name="pName" value="<?php echo $player['player_name'];?>">
+            <input type="text" class="form-control" id="pName<?php echo $player['player_id'];?>" name="pName" value="<?php echo $player['player_name'];?>">
           </div>
           <div class="mb-3">
             <label for="pNumber<?php echo $player['player_id'];?>" class="form-label">Player Number</label>
