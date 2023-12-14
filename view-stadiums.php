@@ -27,7 +27,7 @@ include "view-stadiums-newform.php";
 <?php
 while ($stadium = $stadiums->fetch_assoc()) {
 ?>
-<tr class="table-primary">
+<tr>
   <td><?php echo $stadium['stadium_id']?></td>
   <td><?php echo $stadium['stadium_name']?></td>
   <td><?php echo $stadium['stadium_lat']?></td>
