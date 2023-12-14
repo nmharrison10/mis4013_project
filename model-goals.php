@@ -2,7 +2,8 @@
 function selectGoals() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT goal_id, scorer_id, assister_id, game_id FROM `goal`");
+        $stmt = $conn->prepare("select `goal_id`,`scorer_id`,`scorer`.`player_name` as scorer, `assister_id`, `assister`.`player_name` as assister, `game_id` from `goal` 
+        join `player` scorer on goal.scorer_id=scorer.player_id left join `player` assister on goal.assister_id=assister.player_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
