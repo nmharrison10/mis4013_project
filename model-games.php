@@ -3,7 +3,7 @@ function selectGames() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT game_id, team1_id, club1.club_name as team1_name, team1_score, team2_id, club2.club_name as team2_name, team2_score, s.stadium_id, s.stadium_name date FROM `game` join `club` club1 on game.team1_id=club1.club_id join `club` club2 on game.team2_id=club2.club_id
-        JOIN `stadium` s ON game.stadium_id=s.stadium_id ORDER BY `game_id`;");
+        ORDER BY `game_id`;");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
