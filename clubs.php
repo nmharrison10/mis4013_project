@@ -9,23 +9,23 @@ if (isset($_POST['actionType'])){
  switch ($_POST['actionType']){
   case 'Add':
    if (insertClubs($_POST['clName'],$_POST['clCoach'],$_POST['clLocation'])){
-    echo '<div class="alert alert-success" role="alert"> New Club Added!</div>';
+    echo '<div style="margin:15px" class="alert alert-success" role="alert"> New Club Added!</div>';
    } else {
-    echo '<div class="alert alert-danger" role="alert">Error</div>';
+    echo '<div style="margin:15px" class="alert alert-danger" role="alert">Error</div>';
    }
    break;
   case 'Edit':
    if (updateClubs($_POST['clName'],$_POST['clCoach'],$_POST['clLocation'],$_POST['clid'])){
-    echo '<div class="alert alert-success" role="alert"> Club Updated!</div>';
+    echo '<div style="margin:15px" class="alert alert-success" role="alert"> Club Updated!</div>';
    } else {
-    echo '<div class="alert alert-danger" role="alert">Error</div>';
+    echo '<div style="margin:15px" class="alert alert-danger" role="alert">Error</div>';
    }
    break;
   case 'Delete':
    if (deleteClubs($_POST['clid'])){
-    echo '<div class="alert alert-success" role="alert"> Club Deleted!</div>';
+    echo '<div style="margin:15px" class="alert alert-success" role="alert"> Club Deleted!</div>';
    } else {
-    echo '<div class="alert alert-danger" role="alert">Error</div>';
+    echo '<div style="margin:15px" class="alert alert-danger" role="alert">Error</div>';
    }
    break;
  }
