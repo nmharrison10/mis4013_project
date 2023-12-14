@@ -39,8 +39,12 @@
         
         <div class="mb-3">
             <label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
-            <input type="text" class="form-control" id="countryid<?php echo $player['player_id'];?>" name="countryid" value="<?php echo $player['country_id'];?>">
-          </div>
+<?php
+    $countryList = selectCountriesForInput();
+    $selectedCountryname = $player['country_id'];
+    include "view-country-input-list.php";
+    ?>
+</div>
               
         <input type="hidden" name="pid" value="<?php echo $player['player_id'];?>">
           <input type="hidden" name="actionType" value="Edit">
