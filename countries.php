@@ -50,10 +50,10 @@ if (isset($_POST['actionType'])){
 switch($_POST['actionType']){
   case "Add":
     if(insertCountry($_POST['cName'], $_POST['capName'])) {
-  echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Added</div>';
+  echo '<div style="margin:15px" style="margin:15px" class="alert alert-success" role="alert">Country Added</div>';
     }
     else{
-echo '<div class="alert alert-danger" role="alert">Error</div>"';
+echo '<div style="margin:15px" class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Delete":
@@ -61,7 +61,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Deleted</div>';
     }
     else{
-echo '<div class="alert alert-danger" role="alert">Error</div>"';
+echo '<div style="margin:15px" class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
   case "Edit":
@@ -69,7 +69,7 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
   echo '<div style="margin:15px" class="alert alert-success" role="alert">Country Edited</div>';
     }
     else{
-echo '<div class="alert alert-danger" role="alert">Error</div>"';
+echo '<div style="margin:15px" class="alert alert-danger" role="alert">Error</div>"';
     }
   break;
 }
