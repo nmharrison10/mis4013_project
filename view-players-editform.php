@@ -29,19 +29,7 @@
             <input type="text" class="form-control" id="pAge<?php echo $player['player_id'];?>" name="pAge" value="<?php echo $player['player_age'];?>">
           </div>
 
-          <div class="mb-3">
-            <label for="cid<?php echo $player['player_id'];?>" class="form-label">Club</label>
-<?php
-    $clubList = selectClubsForInput();
-    $selectedClubname = $player['club_id'];;
-    include "view-club-input-list.php";
-?></div>
-        
-        <div class="mb-3">
-            <label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
-            <input type="text" class="form-control" id="countryid<?php echo $player['player_id'];?>" name="countryid" value="<?php echo $player['country_id'];?>">
-          </div>
-              
+         
         <input type="hidden" name="pid" value="<?php echo $player['player_id'];?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
