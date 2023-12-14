@@ -19,17 +19,26 @@
 
       <form method="post" action="">
           <div class="mb-3">
-            <label for="t1id" class="form-label">Team 1 ID</label>
-            <input type="text" class="form-control" id="t1id" name="t1id">
+            <label for="t1id" class="form-label">Team 1</label>
+<?php
+    $clubList = selectClubsForInput();
+    $selectedClubname = "";
+    include "view-club1-input-list.php";
+?>
+</div>
           </div>
           <div class="mb-3">
             <label for="t1s" class="form-label">Team 1 Score</label>
             <input type="text" class="form-control" id="t1s" name="t1s">
           </div>
          <div class="mb-3">
-            <label for="t2id" class="form-label">Team 2 ID</label>
-            <input type="text" class="form-control" id="t2id" name="t2id">
-          </div>
+            <label for="t2id" class="form-label">Team 2</label>
+<?php
+    $clubList = selectClubsForInput();
+    $selectedClubname = "";
+    include "view-club2-input-list.php";
+?>
+</div> </div>
          <div class="mb-3">
             <label for="t2s" class="form-label">Team 2 Score</label>
             <input type="text" class="form-control" id="t2s" name="t2s">
