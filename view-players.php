@@ -19,16 +19,15 @@ include "view-players-newform.php";
       <th>Player's Number</th>
       <th>Player's Age</th>
       <th></th> 
-      <th></th> 
-      <th></th> 
+      <th></th>
       </tr>
     </thead>
-      <tbody>
-        
+      <tbody>    
   <?php
   while ($player = $players -> fetch_assoc()) {
     ?>
-    <tr class="table-primary">
+    <tr>
+      <td><?php echo $player['club_name'];?></td>
       <td><?php echo $player['player_id'];?></td>
       <td><?php echo $player['player_name'];?></td>
       <td><?php echo $player['player_number'];?></td>
