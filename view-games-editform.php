@@ -45,8 +45,7 @@
     $selectedStadiumname = $game['stadium_id'];
     include "view-stadium-input-list.php";
 ?></div>
-               </div>
-               <div class="mb-3">
+        <div class="mb-3">
             <label for="date<?php echo $game['game_id'];?>" class="form-label">Date</label>
             <input type="date" class="form-control" id="date<?php echo $game['game_id'];?>" name="date" value="<?php echo $game['date'];?>">
           </div>
