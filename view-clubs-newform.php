@@ -21,7 +21,7 @@
     <?php
     $countryList = selectCountriesForInput();
     $selectedCountryname = 0;
-    include "view-club-input-list.php";
+    include "view-country-input-list.php";
     ?>
             </div>
             <div class="mb-3">
