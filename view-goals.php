@@ -24,7 +24,7 @@ include "view-goals-newform.php";
 <?php
 while ($goal = $goals->fetch_assoc()) {
 ?>
-<tr class="table-primary">
+<tr>
   <td><?php echo $goal['goal_id']?></td>
   <td><?php echo $goal['scorer_id']?></td>
   <td><?php echo $goal['assister_id']?></td>
