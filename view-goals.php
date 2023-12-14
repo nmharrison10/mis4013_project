@@ -12,10 +12,12 @@ include "view-goals-newform.php";
   <table class="table">
     <head>
       <tr>
-      <th>ID</th>
-      <th>Player ID</th>
-      <th>Assister ID</th>
       <th>Game ID</th>
+      <th>Goal ID</th>
+      <th>Scorer ID</th>
+      <th>Scorer</th>
+      <th>Assister ID</th>
+      <th>Assister</th>
       <th></th>
       <th></th>
       </tr>
@@ -25,10 +27,12 @@ include "view-goals-newform.php";
 while ($goal = $goals->fetch_assoc()) {
 ?>
 <tr>
-  <td><?php echo $goal['goal_id']?></td>
-  <td><?php echo $goal['scorer_id']?></td>
-  <td><?php echo $goal['assister_id']?></td>
   <td><?php echo $goal['game_id']?></td>
+      <td><?php echo $goal['goal_id']?></td>
+      <td><?php echo $goal['scorer_id']?></td>
+      <td><?php echo $goal['scorer']?></td>
+      <td><?php echo $goal['assister_id']?></td>
+      <td><?php echo $goal['assister']?></td>
   <td>
 <?php
 include "view-goals-editform.php";
