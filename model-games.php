@@ -28,6 +28,21 @@ function selectClubsForInput() {
     }
 }
 
+function selectStadiumsForInput() {
+    try {
+        $conn = get_db_connection();
+        $stmt = $conn->prepare("SELECT `stadium_id`, `stadium_name` FROM `stadium` ORDER BY `stadium_name`;");
+        $stmt->execute();
+        $result = $stmt->get_result();
+        $conn->close();
+        return $result;
+    } catch (Exception $e) {
+        $conn->close();
+        throw $e;
+    }
+}
+
+
 function insertGame($t1id, $t1s, $t2id, $t2s, $sid, $date) {
     try {
         $conn = get_db_connection();
