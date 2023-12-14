@@ -22,6 +22,7 @@ include "view-games-newform.php";
       <th>Date</th>
       <th></th>
       <th></th>
+      <th></th>
       </tr>
     </head>
     <body>
@@ -36,6 +37,12 @@ while ($game = $games->fetch_assoc()) {
   <td><?php echo $game['team2_score']; ?></td>
   <td><?php echo $game['stadium_name']; ?></td>
   <td><?php echo $game['date']; ?></td>
+  <td>
+     <form method="post" action="goals-by-game.php">
+        <input type="hidden" name="gid" value="<?php echo $game'game_id']; ?>">
+          <button type="submit" class="btn btn-primary">Goals</button>
+</form>
+  </td>
   <td>
     <?php
     include "view-games-editform.php";
