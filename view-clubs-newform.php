@@ -19,8 +19,8 @@
           <div class="mb-3">
               <label for="cid" class="form-label">Country</label>
     <?php
-    $clubList = selectClubsForInput();
-    $selectedClubname = 0;
+    $countryList = selectCountriesForInput();
+    $selectedcountryname = 0;
     include "view-club-input-list.php";
     ?>
             </div>
