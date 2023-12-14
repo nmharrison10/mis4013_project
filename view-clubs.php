@@ -10,7 +10,7 @@ include "view-clubs-newform.php";
 </div>
 
 <div class="table-responsive">
-  <table class="table">
+  <table class="table table-primary">
     <thead>
       <tr>
       <th>Club ID</th>
@@ -25,7 +25,7 @@ include "view-clubs-newform.php";
   <?php
   while ($club = $clubs->fetch_assoc()) {
     ?>
-    <tr class="table-primary">
+    <tr>
       <td><?php echo $club['club_id'];?></td>
       <td><?php echo $club['club_name'];?></td>
       <td><?php echo $club['coach'];?></td>
