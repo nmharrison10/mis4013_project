@@ -33,7 +33,7 @@
             <label for="cid<?php echo $player['player_id'];?>" class="form-label">Club</label>
 <?php
     $clubList = selectClubsForInput();
-    $selectedClubname = <?php echo $player['club_id'];?>;
+    $selectedClubname = $player['club_id'];;
     include "view-club-input-list.php";
 ?></div>
         
