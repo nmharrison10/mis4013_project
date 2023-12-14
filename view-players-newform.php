@@ -38,9 +38,11 @@
             </div>
           <div class="mb-3">
               <label for="countryid" class="form-label">Player's Country</label>
-            <input type="text" class="form-control" id="countryid" name = "countryid">
-           
-            </div>
+<?php
+    $countryList = selectCountriesForInput();
+    $selectedCountryname = "";
+    include "view-country-input-list.php";
+?> </div>
                 <input type = "hidden" name = "actionType" value = "Add"> 
             <button type="submit" class="btn btn-primary">Save</button>
           </form>
