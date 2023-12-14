@@ -25,7 +25,7 @@
     ?>
             </div>
             <div class="mb-3">
-              <label for="clName" class="form-label"> CLub's Name</label>
+              <label for="clName" class="form-label"> Club's Name</label>
              <input type="text" class="form-control" id="clName" name = "clName">
         </div>
             <div class="mb-3">
