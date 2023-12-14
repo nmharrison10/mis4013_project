@@ -40,8 +40,11 @@
           </div>
                <div class="mb-3">
             <label for="sid<?php echo $game['game_id'];?>" class="form-label">Stadium ID</label>
-            <input type="text" class="form-control" id="sid<?php echo $game['game_id'];?>" name="sid" value="<?php echo $game['stadium_id'];?>">
-          </div>
+<?php
+    $stadiumList = selectStadiumsForInput();
+    $selectedStadiumname = $game['stadium_id'];
+    include "view-stadium-input-list.php";
+?> </div>
                <div class="mb-3">
             <label for="date<?php echo $game['game_id'];?>" class="form-label">Date</label>
             <input type="date" class="form-control" id="date<?php echo $game['game_id'];?>" name="date" value="<?php echo $game['date'];?>">
