@@ -30,13 +30,11 @@
             </div>
           <div class="mb-3">
               <label for="cid" class="form-label">Player's Club</label>
-
 <?php
     $clubList = selectClubsForInput();
     $selectedClubname = "";
     include "view-club-input-list.php";
 ?>
-          
             </div>
           <div class="mb-3">
               <label for="countryid" class="form-label">Player's Country</label>
