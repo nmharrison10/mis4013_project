@@ -43,8 +43,11 @@
           </div>
         <div class="mb-3">
             <label for="sid" class="form-label">Stadium ID</label>
-            <input type="text" class="form-control" id="sid" name="sid">
-          </div>
+<?php
+    $clubList = selectStadiumsForInput();
+    $selectedStadiumname = "";
+    include "view-stadium-input-list.php";
+?></div>
          <div class="mb-3">
             <label for="date" class="form-label">Date</label>
             <input type="date" class="form-control" id="date" name="date">
