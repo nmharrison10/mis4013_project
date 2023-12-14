@@ -2,8 +2,8 @@
 function selectPlayers() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT p.player_id, p.player_name, p.player_number, p.player_age, p.club_id, c.club_name, country.country_name FROM `player` p JOIN club c ON p.club_id = c.club_id
-        JOIN country ON p.country_id=country.country_id");
+        $stmt = $conn->prepare("SELECT p.player_id, p.player_name, p.player_number, p.player_age, p.club_id, c.club_id, c.club_name, country.country_id FROM `player` p JOIN club c ON p.club_id = c.club_id
+        JOIN country ON country.country_id=p.country_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
@@ -45,8 +45,8 @@ function insertPlayers($pName,$pNumber,$pAge, $cid, $countryid) {
 function updatePlayers($pName,$pNumber,$pAge, $cid, $countryid, $pid) {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("update `player` set `player_name`=?, `player_number`= ?, `player_age`= ?, `club_id`= ?, `country_id`= ? where player_id=?");
-        $stmt->bind_param("siiiii", $pName,$pNumber,$pAge,$cid,$countryid,$pid);
+        $stmt = $conn->prepare("UPDATE `player` SET `country_id` = ?, `player_name` = ?, `player_age` = ?, `player_number` = ?, `club_id` = ? WHERE `player`.`player_id` = ?");
+        $stmt->bind_param("isiiii", $countryid, $pName, $pAge, $pNumber, $cid, $pid);
         $success = $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
