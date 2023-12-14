@@ -36,7 +36,16 @@
     $selectedClubname = $player['club_id'];
     include "view-club-input-list.php";
 ?></div>
-        
+
+<div class="mb-3">
+<label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
+<?php
+    $countryList = selectCountriesForInput();
+    $selectedCountryname = $player['country_id'];
+    include "view-country-input-list.php";
+    ?>
+</div>
+                
         <input type="hidden" name="pid" value="<?php echo $player['player_id'];?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
