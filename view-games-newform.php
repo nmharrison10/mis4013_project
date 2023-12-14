@@ -19,7 +19,11 @@
 
       <form method="post" action="">
           <div class="mb-3">
-            <label for="t1id" class="form-label">Team 1</label>
+<?php
+    $clubList = selectClubsForInput();
+    $selectedClubname = "";
+    include "view-club1-input-list.php";
+?>
           </div>
           <div class="mb-3">
             <label for="t1s" class="form-label">Team 1 Score</label>
