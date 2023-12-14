@@ -1,6 +1,6 @@
 <div class="row">
   <div class = "col">
-  <h1>Club</h1>
+  <h1>Clubs</h1>
   </div>
   <div class = "col-auto">
 <?php
