@@ -25,7 +25,7 @@ include "view-clubs-newform.php";
   <?php
   while ($club = $clubs->fetch_assoc()) {
     ?>
-    <tr>
+    <tr class="table-primary">
       <td><?php echo $club['club_id'];?></td>
       <td><?php echo $club['club_name'];?></td>
       <td><?php echo $club['coach'];?></td>
