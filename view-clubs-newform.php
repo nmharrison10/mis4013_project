@@ -21,7 +21,7 @@
              <input type="text" class="form-control" id="clName" name = "clName">
         </div>
             <div class="mb-3">
-              <label for="clCoach" class="form-label">Coach's name</label>
+              <label for="clCoach" class="form-label">Coach's Name</label>
               <input type="text" class="form-control" id="clCoach" name = "clCoach">
             </div>
             <div class="mb-3">
