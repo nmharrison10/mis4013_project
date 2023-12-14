@@ -41,7 +41,7 @@
 <label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
 <?php
     $countryList = selectCountriesForInput();
-    $selectedCountryname = 0;
+    $selectedCountryname = $player['country_id'];
     include "view-country-input-list.php";
     ?>
 </div>
