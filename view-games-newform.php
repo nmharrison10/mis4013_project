@@ -42,9 +42,9 @@
             <input type="text" class="form-control" id="t2s" name="t2s">
           </div>
         <div class="mb-3">
-            <label for="sid" class="form-label">Stadium ID</label>
+            <label for="sid" class="form-label">Stadium</label>
 <?php
-    $clubList = selectStadiumsForInput();
+    $stadiumList = selectStadiumsForInput();
     $selectedStadiumname = "";
     include "view-stadium-input-list.php";
 ?></div>
