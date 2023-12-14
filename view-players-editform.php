@@ -33,14 +33,18 @@
 <label for="cid<?php echo $player['player_id'];?>" class="form-label">Club</label>
 <?php
     $clubList = selectClubsForInput();
-    $selectedClubname = $player['club_id'];;
+    $selectedClubname = $player['club_id'];
     include "view-club-input-list.php";
 ?></div>
         
-        <div class="mb-3">
-            <label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
-            <input type="text" class="form-control" id="countryid<?php echo $player['player_id'];?>" name="countryid" value="<?php echo $player['country_id'];?>">
-          </div>
+<div class="mb-3">
+<label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
+<?php
+    $countryList = selectCountriesForInput();
+    $selectedCountryname = $player['country_id'];
+    include "view-country-input-list.php";
+    ?>
+</div>
           
          
         <input type="hidden" name="pid" value="<?php echo $player['player_id'];?>">
