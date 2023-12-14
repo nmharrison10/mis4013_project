@@ -17,7 +17,7 @@
       <div class="modal-body">
         <form method = "post" action="">
           <div class="mb-3">
-              <label for="cid" class="form-label">Country</label>
+              <label for="clid" class="form-label">Country</label>
     <?php
     $countryList = selectCountriesForInput();
     $selectedCountryname = 0;
