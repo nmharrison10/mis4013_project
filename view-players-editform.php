@@ -31,8 +31,11 @@
 
           <div class="mb-3">
             <label for="cid<?php echo $player['player_id'];?>" class="form-label">Club</label>
-            <input type="text" class="form-control" id="cid<?php echo $player['player_id'];?>" name="cid" value="<?php echo $player['club_id'];?>">
-          </div>
+<?php
+    $clubList = selectClubsForInput();
+    $selectedClubname = <?php echo $player['club_id'];?>;
+    include "view-club-input-list.php";
+?></div>
         
         <div class="mb-3">
             <label for="countryid<?php echo $player['player_id'];?>" class="form-label">Country</label>
