@@ -18,6 +18,8 @@ include "view-games-newform.php";
       <th>Team 1 Score</th>
       <th>Team 2</th>
       <th>Team 2 Score</th>
+      <th>Stadium</th>
+      <th>Date</th>
       <th></th>
       <th></th>
       </tr>
@@ -32,6 +34,8 @@ while ($game = $games->fetch_assoc()) {
   <td><?php echo $game['team1_score']; ?></td>
   <td><?php echo $game['team2_name']; ?></td>
   <td><?php echo $game['team2_score']; ?></td>
+  <td><?php echo $game['stadium_name']; ?></td>
+  <td><?php echo $game['date']; ?></td>
   <td>
     <?php
     include "view-games-editform.php";
