@@ -3,7 +3,7 @@
     while ($countrynameItem =$countryList->fetch_assoc()){
       $selText = "";
       if ($selectedCountryname == $countrynameItem['country_id']){
-        $selText = "selected";
+        $selText = " selected";
 
       }
       ?>
