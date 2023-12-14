@@ -16,14 +16,6 @@
       </div>
       <div class="modal-body">
         <form method = "post" action="">
-          <div class="mb-3">
-              <label for="clid" class="form-label">Country</label>
-    <?php
-    $countryList = selectCountriesForInput();
-    $selectedCountryname = 0;
-    include "view-club-input-list.php";
-    ?>
-            </div>
             <div class="mb-3">
               <label for="clName" class="form-label"> Club's Name</label>
              <input type="text" class="form-control" id="clName" name = "clName">
