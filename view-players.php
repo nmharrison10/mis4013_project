@@ -14,27 +14,26 @@ include "view-players-newform.php";
     <thead>
       <tr>
       <th>Player's ID</th>
-      <th >Player's Name</th>
+      <th>Player's Name</th>
       <th>Player's Number</th>
       <th>Player's Age</th>
-      <th>Nationality</th> 
-       <th>Club</th>
+      <th>Club Name</th>
+      <th>Country</th>
       <th></th> 
-      <th></th> 
+      <th></th>
       </tr>
     </thead>
-      <tbody>
-        
+      <tbody>    
   <?php
   while ($player = $players -> fetch_assoc()) {
     ?>
-    <tr class="table-primary">
+    <tr>
       <td><?php echo $player['player_id'];?></td>
       <td><?php echo $player['player_name'];?></td>
       <td><?php echo $player['player_number'];?></td>
       <td><?php echo $player['player_age'];?></td>
+       <td><?php echo $player['club_name'];?></td>
       <td><?php echo $player['country_name'];?></td>
-      <td><?php echo $player['club_name'];?></td>
       <td>
     <?php
           include "view-players-editform.php";
@@ -51,7 +50,6 @@ include "view-players-newform.php";
        </button>
         </form>
     </td>
-    
     </tr>
     <?php
   }
