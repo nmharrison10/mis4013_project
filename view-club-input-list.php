@@ -1,4 +1,4 @@
-<select class="form-select" id="clid" name="clid">
+<select class="form-select" id="cid" name="cid">
   <?php
     while ($countrynameItem =$countryList->fetch_assoc()){
       $selText = "";
