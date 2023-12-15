@@ -36,10 +36,6 @@
     $selectedAssistername = "";
     include "view-assister-input-list.php";
 ?> </div>
-          <div class="mb-3">
-            <label for="gGame" class="form-label">Game ID</label>
-            <input type="text" class="form-control" id="gGame" name="gGame">
-          </div>
               <input type="hidden" name="actionType" value="Add">
           <button type="submit" class="btn btn-primary">Save</button>
             </form>
