@@ -6,7 +6,7 @@
         $selText = "selected";
       }
       ?>
-      <option value="<?php echo $scorernameItem['player_id'];?>"<?=$selText?>><?php echo $scorernameItem['player_name'];?>", "<?php echo $scorernameItem['club_name'];?></option>
+      <option value="<?php echo $scorernameItem['player_id'];?>"<?=$selText?>><?php echo $scorernameItem['player_name'];?>, <?php echo $scorernameItem['club_name'];?></option>
   <?php
     }
     ?>
