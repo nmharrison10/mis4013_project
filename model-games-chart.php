@@ -1,5 +1,5 @@
 <?php
-function selectGoals() {
+function selectGames() {
     try {
         $conn = get_db_connection();
         $stmt = $conn->prepare("SELECT club2.club_name, SUM(score1) as goals
