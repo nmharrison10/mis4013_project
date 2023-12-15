@@ -7,7 +7,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.css" rel="stylesheet"/>
                     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.3/leaflet.min.js"></script>
-
+    <link rel="icon"  href="soccer-ball.png">
     <link rel = "stylesheet" href = "bootstrap.css">
   </head>
   <body>
