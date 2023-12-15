@@ -19,8 +19,11 @@
             <form method="post" action="">
           <div class="mb-3">
             <label for="gScorer<?php echo $goal['goal_id'];?>" class="form-label">Scorer ID</label>
-            <input type="text" class="form-control" id="gScorer<?php echo $goal['goal_id'];?>" name="gScorer" value="<?php echo $goal['scorer_id'];?>">
-          </div>
+<?php
+    $scorerList = selectPlayersForInput();
+    $selectedScorername = $goal['scorer_id'];
+    include "view-scorer-input-list.php";
+?> </div>
           <div class="mb-3">
             <label for="gAssister<?php echo $goal['goal_id'];?>" class="form-label">Assister ID (if applicable)</label>
             <input type="text" class="form-control" id="gAssister<?php echo $goal['goal_id'];?>" name="gAssister" value="<?php echo $goal['assister_id'];?>">
