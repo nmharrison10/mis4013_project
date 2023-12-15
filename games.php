@@ -37,6 +37,5 @@ echo '<div class="alert alert-danger" role="alert">Error</div>"';
 
 $games = selectGames();
 include "view-games.php";
-include"games-chart.php";
 include "view-footer.php";
 ?>
