@@ -1,6 +1,7 @@
 <div class="row">
   <div class="col">
     <h1>Games</h1>
+     <h5><a href="games-chart.php">Stats</a></h5>
   </div>
   <div class="col-auto">
 <?php
