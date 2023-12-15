@@ -17,21 +17,24 @@
       <div class="modal-body">
 
             <form method="post" action="">
+        <div class="mb-3">
+            <label for="gGame<?php echo $goal['goal_id'];?>" class="form-label">Game ID</label>
+            <input type="text" class="form-control" id="gGame<?php echo $goal['goal_id'];?>" name="gGame" value="<?php echo $goal['game_id'];?>">
+        </div>
           <div class="mb-3">
-            <label for="gScorer<?php echo $goal['goal_id'];?>" class="form-label">Scorer ID</label>
+            <label for="gScorer<?php echo $goal['goal_id'];?>" class="form-label">Scorer</label>
 <?php
     $scorerList = selectPlayersForInput();
     $selectedScorername = $goal['scorer_id'];
     include "view-scorer-input-list.php";
 ?> </div>
           <div class="mb-3">
-            <label for="gAssister<?php echo $goal['goal_id'];?>" class="form-label">Assister ID (if applicable)</label>
-            <input type="text" class="form-control" id="gAssister<?php echo $goal['goal_id'];?>" name="gAssister" value="<?php echo $goal['assister_id'];?>">
-          </div>
-         <div class="mb-3">
-            <label for="gGame<?php echo $goal['goal_id'];?>" class="form-label">Goal ID</label>
-            <input type="text" class="form-control" id="gGame<?php echo $goal['goal_id'];?>" name="gGame" value="<?php echo $goal['game_id'];?>">
-          </div>
+            <label for="gAssister<?php echo $goal['goal_id'];?>" class="form-label">Assister</label>
+<?php
+    $assisterList = selectPlayersForInput();
+    $selectedAssistername = $goal['assister_id'];
+    include "view-assister-input-list.php";
+?> </div>
               <input type="hidden" name="gid" value="<?php echo $goal['goal_id'];?>">
           <input type="hidden" name="actionType" value="Edit">
           <button type="submit" class="btn btn-primary">Save</button>
