@@ -39,7 +39,7 @@ while ($game = $games->fetch_assoc()) {
   <td><?php echo $game['date']; ?></td>
   <td>
      <form method="post" action="goals-by-game.php">
-        <input type="hidden" name="gid" value="<?php echo $game['game_id']; ?>">
+        <input type="hidden" name="gameid" value="<?php echo $game['game_id']; ?>">
           <button type="submit" class="btn btn-primary">Goals</button>
 </form>
   </td>
