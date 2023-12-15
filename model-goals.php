@@ -17,7 +17,7 @@ function selectGoals() {
 function selectPlayersForInput() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT player_id, player_name, club.club_id, club_name from `player` join `club` on player.club_id=club.club_id ORDER BY `player_name`;");
+        $stmt = $conn->prepare("SELECT player_id, player_name, club.club_id, club_name from `player` join `club` on player.club_id=club.club_id ORDER BY `club_name`, `player_name`;");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
