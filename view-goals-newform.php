@@ -23,14 +23,14 @@
             <input type="text" class="form-control" id="gGame" name="gGame">
           </div>
           <div class="mb-3">
-            <label for="gScorer" class="form-label">Scorer ID</label>
+            <label for="gScorer" class="form-label">Scorer</label>
 <?php
     $scorerList = selectPlayersForInput();
     $selectedScorername = "";
     include "view-scorer-input-list.php";
 ?></div>
           <div class="mb-3">
-            <label for="gAssister" class="form-label">Assister ID (if applicable)</label>
+            <label for="gAssister" class="form-label">Assister</label>
 <?php
     $assisterList = selectPlayersForInput();
     $selectedAssistername = "";
