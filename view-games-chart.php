@@ -1,4 +1,4 @@
- <h1>Games</h1>
+<h1>Goals per Team</h1>
 <div>
   <canvas id="myChart"></canvas>
 </div>
@@ -12,6 +12,7 @@
     type: 'bar',
     data: {
     datasets: [{
+     label: 'Goals Scored',
         data: [<?php
 while ($game = $games->fetch_assoc()) {
   echo $game['goals'].", ";
