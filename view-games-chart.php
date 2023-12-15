@@ -3,7 +3,8 @@
   <canvas id="myChart"></canvas>
 </div>
 
-<script src="path/to/chartjs/dist/chart.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <script>
   const ctx = document.getElementById('myChart');
 
