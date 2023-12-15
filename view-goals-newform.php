@@ -23,7 +23,7 @@
             <input type="text" class="form-control" id="gScorer" name="gScorer">
           </div>
           <div class="mb-3">
-            <label for="gAssister" class="form-label">Assister ID</label>
+            <label for="gAssister" class="form-label">Assister ID (if applicable)</label>
             <input type="text" class="form-control" id="gAssister" name="gAssister">
           </div>
           <div class="mb-3">
