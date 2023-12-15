@@ -19,6 +19,7 @@ include "view-clubs-newform.php";
       <th>Club's Location</th> 
       <th></th> 
       <th></th> 
+      <th></th>
       </tr>
       </thead>
       <tbody>  
@@ -30,7 +31,6 @@ include "view-clubs-newform.php";
       <td><?php echo $club['club_name'];?></td>
       <td><?php echo $club['coach'];?></td>
       <td><?php echo $club['location'];?></td>
-
       <td>
         <?php
           include "view-clubs-editform.php";
@@ -49,7 +49,7 @@ include "view-clubs-newform.php";
     </td>
       <td>
         <form method = "post" action="player-by-club.php">
-      <input type="hidden" name= "clid" value ="<?php echo $player['player_id'];?>">
+      <input type="hidden" name= "clid" value ="<?php echo $club['club_id'];?>">
       <button type="submit" class="btn btn-primary">Roster</button>
     </form>
       </td>
