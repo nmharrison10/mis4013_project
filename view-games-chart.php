@@ -23,7 +23,7 @@ while ($game = $games->fetch_assoc()) {
      <?php
 $games = SelectGames();
 while ($game = $games->fetch_assoc()) {
-  echo "'"$game['club_name']."', ";
+  echo "'".$game['club_name']."', ";
 }
 ?>
 ]
