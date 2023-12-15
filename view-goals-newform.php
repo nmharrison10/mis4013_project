@@ -19,13 +19,23 @@
 
             <form method="post" action="">
           <div class="mb-3">
-            <label for="gScorer" class="form-label">Scorer ID</label>
-            <input type="text" class="form-control" id="gScorer" name="gScorer">
+            <label for="gGame" class="form-label">Game ID</label>
+            <input type="text" class="form-control" id="gGame" name="gGame">
           </div>
           <div class="mb-3">
+            <label for="gScorer" class="form-label">Scorer ID</label>
+<?php
+    $scorerList = selectPlayersForInput();
+    $selectedScorername = "";
+    include "view-scorer-input-list.php";
+?></div>
+          <div class="mb-3">
             <label for="gAssister" class="form-label">Assister ID (if applicable)</label>
-            <input type="text" class="form-control" id="gAssister" name="gAssister">
-          </div>
+<?php
+    $assisterList = selectPlayersForInput();
+    $selectedAssistername = "";
+    include "view-assister-input-list.php";
+?> </div>
           <div class="mb-3">
             <label for="gGame" class="form-label">Game ID</label>
             <input type="text" class="form-control" id="gGame" name="gGame">
