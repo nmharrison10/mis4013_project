@@ -5,7 +5,7 @@ require_once ("model-player-by-club.php");
 $pageTitle = "Club Roster";
 include "view-header.php";
 
-$clubs = selectPlayersbyClub($_POST['clid']);
+$players = selectPlayersbyClub($_POST['clid']);
 include "view-player-by-club.php";
 
 include "view-footer.php";
