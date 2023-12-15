@@ -16,8 +16,8 @@ include "view-stadiums-newform.php";
       <tr>
       <th>ID</th>
       <th>Name</th>
-      <th>Longitude</th>
       <th>Latitude</th>
+      <th>Longitude</th>
       <th>Location</th>
       <th></th>
       <th></th>
