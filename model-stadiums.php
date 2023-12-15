@@ -2,7 +2,7 @@
 function selectStadiums() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT stadium_id, stadium_name, stadium_long, stadium_lat, location FROM `stadium`");
+        $stmt = $conn->prepare("SELECT stadium_id, stadium_name, stadium_long, stadium_lat, location FROM `stadium` ORDER BY stadium_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
