@@ -2,7 +2,7 @@
 function selectClubs() {
     try {
         $conn = get_db_connection();
-        $stmt = $conn->prepare("SELECT club_id,club_name,coach,location FROM `club`");
+        $stmt = $conn->prepare("SELECT club_id,club_name,coach,location FROM `club` ORDER BY club_id");
         $stmt->execute();
         $result = $stmt->get_result();
         $conn->close();
